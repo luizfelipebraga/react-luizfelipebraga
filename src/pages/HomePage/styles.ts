@@ -1,24 +1,26 @@
 import styled from 'styled-components';
 
 export const HomePageSection = styled.section`
-  height:100%;
+  height:88vh;
   width: 100%;
+  overflow: hidden;
+
+  min-width: 750px;
 
   position: relative;
 `;
 
 export const Container = styled.div`
   width: 100%;
-
-  margin-top: 4rem;
+  min-width: 750px;
+  position: inherit;
 
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   gap: 5rem;
 
-  padding: 100px;
+  padding: 200px 100px;
 
   img {
     height: 15rem;
@@ -63,7 +65,7 @@ export const AsideTitle = styled.aside`
   }
 `;
 
-export const BoxCvButtons = styled.div`
+export const BoxGithubButton = styled.div`
   display: block;
   text-align: center;
   -ms-flex-wrap: wrap;
@@ -72,36 +74,53 @@ export const BoxCvButtons = styled.div`
   margin-top: 3rem;
 `;
 
-export const CvButton = styled.a`
+export const GithubButton = styled.a`
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1rem;
+  box-shadow: 0 11px 36px 0 rgba(70, 89, 138, 0.25);
   margin-right: 1rem;
 
   overflow: hidden;
-  font-weight: 700;
-  color: #fff; 
-
-  background-image: linear-gradient(120deg, #d98324 0%, #783f00 100%);
-
-  
-  border-radius: 25px;
+  font-weight: bold;
+  color: #fff;
 
   padding: 16px 35px;
 
   position: relative;
 
   z-index: 1;
-  transition: filter 0.2s ease;
+
+  border: 2px solid #f55f19;
 
   &:hover {
-      filter: brightness(0.8);
+      color: #fff;
+      &:before {
+          background: #f55f19;
+          width: 100%;
+      }
   }
+
+  &:before {
+      width: 0;
+      height: 100%;
+
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+
+      z-index: -1;
+      transition: 0.7s ease;
+    }
 `;
 
 export const BoxSocialMedias = styled.div`
   width: 100%;
-  height: 30%;
+  height: 5rem;
+  position: inherit;
 
   display: inline-flex;
   gap: 1rem;
@@ -112,7 +131,7 @@ export const BoxSocialMedias = styled.div`
 
 export const SocialMedia = styled.a`
   img {
-    height: 4.5rem;
+    width: 3rem;
     transition: all 0.2s ease-in-out;
 
     &:hover {

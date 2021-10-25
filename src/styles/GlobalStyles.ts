@@ -6,14 +6,13 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
+
     html, body, #root {
         height: 100vh;
-        overflow-x: hidden;
         width : 100%;
-        font-size: 1rem;
+        overflow-x: hidden;
         scroll-behavior: smooth;
-    background-image: linear-gradient(91.18deg, #0d0d0e 32.63%, #141416 62.22%);
-
+        background-image: linear-gradient(91.18deg, #0d0d0e 32.63%, #141416 62.22%);
     }
 
     a {
