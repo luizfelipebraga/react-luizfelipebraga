@@ -76,11 +76,10 @@ export const CvButton = styled.a`
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1rem;
-  // box-shadow: 0 11px 36px 0 rgba(70, 89, 138, 0.25);
   margin-right: 1rem;
 
   overflow: hidden;
-  font-weight: bold;
+  font-weight: 700;
   color: #fff; 
 
   background-image: linear-gradient(120deg, #d98324 0%, #783f00 100%);
@@ -97,29 +96,27 @@ export const CvButton = styled.a`
 
   &:hover {
       filter: brightness(0.8);
-
-      &:before {
-          width: 100%;
-      }
   }
+`;
 
-  &:before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      border-radius: 24px;
+export const BoxSocialMedias = styled.div`
+  width: 100%;
+  height: 30%;
 
-      transform: translate(-50%, -50%);
+  display: inline-flex;
+  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+`;
 
-      width: 100%;
-      height: 100%;
+export const SocialMedia = styled.a`
+  img {
+    height: 4.5rem;
+    transition: all 0.2s ease-in-out;
 
-      background-image: linear-gradient(225deg, #afafaf, #b3b3b3);
-      z-index: -1;
-      transition: 0.7s ease;
-
-      width: 0;
-      height: 100%;
+    &:hover {
+      filter: brightness(0.8);
+    }
   }
 `;

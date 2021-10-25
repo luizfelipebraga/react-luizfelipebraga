@@ -8,10 +8,12 @@ export default createGlobalStyle`
     }
     html, body, #root {
         height: 100vh;
-        overflow: hidden;
+        overflow-x: hidden;
         width : 100%;
         font-size: 1rem;
         scroll-behavior: smooth;
+    background-image: linear-gradient(91.18deg, #0d0d0e 32.63%, #141416 62.22%);
+
     }
 
     a {
