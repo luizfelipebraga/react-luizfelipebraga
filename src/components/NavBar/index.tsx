@@ -13,12 +13,12 @@ export const NavBar = () => {
         <Link to="/"><img src={LogoImg} alt="Logo" /></Link>
         <ul>
           <Link to="/"><span>01.</span>Home</Link>
-          <Link to="/projects"><span>02.</span>Projetos</Link>
+          <Link to="/projects"><span>02.</span>Projects</Link>
           <Link to="/github" target="_blank" rel="noopener noreferrer"><span>03.</span>Github</Link>
-          <Link to="/contact"><span>04.</span>Contato</Link>
+          <Link to="/contact"><span>04.</span>Contact</Link>
           <BoxCvButtons>
             <ResumeButton href={PtResume} target="_blank">Curriculo</ResumeButton>
-            <ResumeButton href={EngResume} target="_blank">Curriculum</ResumeButton>
+            <ResumeButton href={EngResume} target="_blank">Resume</ResumeButton>
           </BoxCvButtons>
         </ul>
       </Nav>

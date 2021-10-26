@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 
 export const HomePageSection = styled.section`
-
   height: 100%;
   width: 100%;
-
 `;
 
 export const Container = styled.div`
@@ -19,10 +17,9 @@ export const Container = styled.div`
   margin-bottom: 5rem;
   z-index: 5;
 
-  img {
+  >img {
     height: 15rem;
   }
-
 `;
 
 export const AsideTitle = styled.aside`

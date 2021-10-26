@@ -21,9 +21,11 @@ export const Container = styled.div`
 export const Nav = styled.nav`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   transition: all 0.5s ease-in-out;
+
+  padding: 0 2rem;
 
   z-index: 1;
 
@@ -45,7 +47,7 @@ export const Nav = styled.nav`
       }
 
       &:hover {
-        filter: brightness(.9);
+        color: #f9a251;
       }
     }
   }
@@ -76,14 +78,14 @@ export const BoxCvButtons = styled.div`
 export const ResumeButton = styled.a`
     text-decoration: none;
     text-transform: uppercase;
-    font-size: .9rem !important;
+    font-size: .8rem !important;
     margin-right: 1rem;
 
     overflow: hidden;
     font-weight: bold;
     color: #fff;
 
-    padding: 10px 20px;
+    padding: 15px 20px;
 
     position: relative;
 
@@ -92,7 +94,7 @@ export const ResumeButton = styled.a`
     border: 2px solid #f55f19;
 
     &:hover {
-        color: #fff;
+        color: #fff !important;
         &:before {
             background: #f55f19;
             width: 100%;

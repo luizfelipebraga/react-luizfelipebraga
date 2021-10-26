@@ -27,23 +27,9 @@ export function HomePage() {
         <AsideTitle>
           <span>Hello World,</span>
           <span>I&apos;m  Luiz Felipe</span>
-          <p>I’m a software engineer specializing in building
+          <p>I’m a Full Stack Developer specializing in building
             (and occasionally designing) exceptional digital experiences.
             Currently, I’m focused on building <b>ReactJs</b> and <b>NodeJs</b> applications.</p>
-
-          <BoxSocialMedias>
-            <SocialMedia href="https://github.com/luizfelipebraga" target="_blank">
-              <img src={GithubLogo} alt="Logo do Github" />
-            </SocialMedia>
-
-            <SocialMedia href="https://www.linkedin.com/in/luizfelipe-braga/" target="_blank">
-              <img src={LinkedinLogo} alt="Logo do Linkedin" />
-            </SocialMedia>
-
-            <SocialMedia href="mailto:luizfelipebragaa@gmail.com" target="_blank">
-              <img src={GmailLogo} alt="Logo de Email" />
-            </SocialMedia>
-          </BoxSocialMedias>
 
           <BoxGithubButton>
             <GithubButton href="https://github.com/luizfelipebraga" target="_blank">Check out my Github</GithubButton>
