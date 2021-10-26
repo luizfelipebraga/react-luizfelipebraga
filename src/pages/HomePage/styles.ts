@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const HomePageSection = styled.section`
-  display: flex;
-  flex-wrap: wrap;
 
   height: 100%;
   width: 100%;
@@ -17,7 +15,7 @@ export const Container = styled.div`
   align-items: center;
   gap: 5rem;
 
-  padding: 100px 100px;
+  padding: 150px 100px;
   margin-bottom: 5rem;
   z-index: 5;
 
