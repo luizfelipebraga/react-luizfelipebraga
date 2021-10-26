@@ -13,9 +13,6 @@ import LinkedinLogo from '../../svgs/linkedin-white.svg';
 import GmailLogo from '../../svgs/logo-gmail.svg';
 import RuivoProgramando from '../../svgs/hello-ruivo.svg';
 
-import PortResume from '../../documents/resume.pdf';
-import EngResume from '../../documents/curriculum.pdf';
-import { WaveTop } from '../../components/Waves/wavetop';
 import { WaveBottom } from '../../components/Waves/wavebottom';
 
 export function HomePage() {
@@ -30,7 +27,9 @@ export function HomePage() {
         <AsideTitle>
           <span>Hello World,</span>
           <span>I&apos;m  Luiz Felipe</span>
-          <span>Developer / Gamer / Designer</span>
+          <p>I’m a software engineer specializing in building
+            (and occasionally designing) exceptional digital experiences.
+            Currently, I’m focused on building <b>ReactJs</b> and <b>NodeJs</b> applications.</p>
 
           <BoxSocialMedias>
             <SocialMedia href="https://github.com/luizfelipebraga" target="_blank">
@@ -47,7 +46,7 @@ export function HomePage() {
           </BoxSocialMedias>
 
           <BoxGithubButton>
-            <GithubButton href="https://github.com/luizfelipebraga" target="_blank">Check My Repositories</GithubButton>
+            <GithubButton href="https://github.com/luizfelipebraga" target="_blank">Check out my Github</GithubButton>
           </BoxGithubButton>
 
         </AsideTitle>

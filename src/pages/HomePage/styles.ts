@@ -1,26 +1,25 @@
 import styled from 'styled-components';
 
 export const HomePageSection = styled.section`
-  height:88vh;
+  display: flex;
+  flex-wrap: wrap;
+
+  height: 100%;
   width: 100%;
-  overflow: hidden;
 
-  min-width: 750px;
-
-  position: relative;
 `;
 
 export const Container = styled.div`
   width: 100%;
-  min-width: 750px;
-  position: inherit;
 
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 5rem;
 
-  padding: 200px 100px;
+  padding: 100px 100px;
+  margin-bottom: 5rem;
+  z-index: 5;
 
   img {
     height: 15rem;
@@ -35,7 +34,8 @@ export const AsideTitle = styled.aside`
   align-items: center;
 
   span {
-    font-size: 1rem;
+    display: flex;
+    font-size: .8rem;
     color: #fff;
 
     &:first-child {
@@ -55,14 +55,21 @@ export const AsideTitle = styled.aside`
       font-size: 4rem;
       font-weight: bold;
     }
-
-    &:last-child {
-      font-size: 1rem;
-    }
     
-    text-align: center;
     text-transform: uppercase;
   }
+
+  p {
+      color: #949494;
+      font-size: 1rem;
+      max-width: 540px;
+      line-height: 25px;
+      align-items: right;
+
+      b {
+        color: #ee9a4d;
+      }
+    }
 `;
 
 export const BoxGithubButton = styled.div`
@@ -76,9 +83,8 @@ export const BoxGithubButton = styled.div`
 
 export const GithubButton = styled.a`
   text-decoration: none;
-  text-transform: uppercase;
   font-size: 1rem;
-  box-shadow: 0 11px 36px 0 rgba(70, 89, 138, 0.25);
+  /* box-shadow: 0 11px 36px 0 rgba(70, 89, 138, 0.25); */
   margin-right: 1rem;
 
   overflow: hidden;

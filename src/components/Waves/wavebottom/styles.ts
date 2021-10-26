@@ -9,6 +9,8 @@ export const Wave = styled.div`
   line-height: 0;
   transform: rotate(180deg);
 
+  margin-top: 2rem;
+
   svg {
     position: relative;
     display: block;

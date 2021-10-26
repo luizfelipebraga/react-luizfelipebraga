@@ -8,11 +8,14 @@ export default createGlobalStyle`
     }
 
     html, body, #root {
-        height: 100vh;
+        height: 100%;
         width : 100%;
-        overflow-x: hidden;
         scroll-behavior: smooth;
         background-image: linear-gradient(91.18deg, #0d0d0e 32.63%, #141416 62.22%);
+    }
+
+    h1, h2, h3, h4, h5, span, button  {
+        font-family: 'Inter', sans-serif;
     }
 
     a {
