@@ -1,6 +1,4 @@
-
-
-export function Contato() {
+export function AboutPage() {
   return (
     <div>
       

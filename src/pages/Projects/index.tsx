@@ -1,6 +1,6 @@
 
 
-export function Projetos() {
+export function ProjectsPage() {
   return (
     <div>
       

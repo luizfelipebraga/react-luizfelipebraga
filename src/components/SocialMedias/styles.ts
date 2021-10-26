@@ -19,7 +19,7 @@ export const Ul = styled.ul`
   list-style: none;
 
   li a {
-    padding: 12px;
+    padding: 15px;
     display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
@@ -28,7 +28,7 @@ export const Ul = styled.ul`
 
     svg {
       fill: #fff;
-      height: 2rem;
+      height: 1.5rem;
 
       transition: all 0.2s ease-in-out;
 
@@ -43,7 +43,7 @@ export const Ul = styled.ul`
     content: "";
     display: block;
     width: 1px;
-    height: 90px;
+    height: 93px;
     margin: 0px auto;
     background-color: #fff;
   }

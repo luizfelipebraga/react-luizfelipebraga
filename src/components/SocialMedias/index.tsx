@@ -3,10 +3,6 @@ import {
   Ul
 } from './styles';
 
-import githubLogo from '../../svgs/github2.svg';
-import linkedinLogo from '../../svgs/linkedin-white.svg';
-import gmailLogo from '../../svgs/logo-gmail.svg';
-
 export function SocialMediaSideBar() {
   return (
     <Container>

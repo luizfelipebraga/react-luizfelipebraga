@@ -1,3 +1,4 @@
+import { AuthorNameComponent } from "../../Name";
 import { NavBar } from "../../NavBar"
 import { SocialMediaSideBar } from "../../SocialMedias";
 import { Container } from "./styles"
@@ -8,6 +9,7 @@ export const Main: React.FC = ({ children }) => {
     <Container>
       <NavBar />
       <SocialMediaSideBar/>
+      <AuthorNameComponent/>
 
       <Content>
         {children}
