@@ -1,12 +1,17 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  width: 100%;
-
+export const Nav = styled.nav`
   display: flex;
   align-items: center;
-  padding: 1rem;
-  
+  justify-content: space-between;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+
+  position: fixed;
+  z-index: 1;
+
+  padding: 1rem 2rem;
+
   img {
     height: 5rem;
     cursor: pointer;
@@ -16,9 +21,38 @@ export const Container = styled.div`
       transform: rotate(50deg)
     }
   }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    transition: all 0.5s ease-in-out;
+
+    a {
+      display: flex;
+      gap: .5rem;
+      color: #f2f2f2;
+      font-size: 1.1rem;
+      transition: all 0.2s ease-in-out;
+
+      span {
+        color: #f9a251;
+      }
+
+      &:hover {
+        color: #f9a251;
+      }
+    }
+  }
+
+  @media(max-width: 1030px) {
+    
+  }
 `;
 
-export const Nav = styled.nav`
+export const NavActive = styled.nav `
+  background: linear-gradient(90deg, #2b2a4a 0%, #2b2a4a 6%, #75709e 100%);
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -26,8 +60,18 @@ export const Nav = styled.nav`
   transition: all 0.5s ease-in-out;
 
   padding: 0 2rem;
-
+  position: fixed;
   z-index: 1;
+
+  img {
+    height: 5rem;
+    cursor: pointer;
+
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      transform: rotate(50deg)
+    }
+  }
 
   ul {
     display: flex;

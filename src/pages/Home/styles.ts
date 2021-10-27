@@ -7,18 +7,23 @@ export const HomePageSection = styled.section`
 
 export const Container = styled.div`
   width: 100%;
+  height: 90%;
 
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 5rem;
 
-  padding: 150px 100px;
-  margin-bottom: 5rem;
-  z-index: 5;
+  padding: 100px;
 
   >img {
     height: 15rem;
+  }
+
+  @media(max-width:1320px) {
+    >img {
+      display: none;
+    }
   }
 `;
 
@@ -27,6 +32,9 @@ export const AsideTitle = styled.aside`
   gap: 1rem;
   flex-direction: column;
   align-items: center;
+
+  z-index: 5;
+
 
   span {
     display: flex;

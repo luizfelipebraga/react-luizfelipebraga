@@ -13,7 +13,7 @@ import { WaveBottom } from '../../components/Waves/wavebottom';
 export function HomePage() {
   return (
     <HomePageSection>
-
+      
       <Container>
         <img src={RuivoProgramando} alt="Imagem de uma pessoa programando" />
 

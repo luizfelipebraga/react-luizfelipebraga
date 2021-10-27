@@ -1,6 +1,5 @@
 import { ShapeFill, Wave } from "./styles";
 
-
 export function WaveBottom() {
   return (
     <Wave>

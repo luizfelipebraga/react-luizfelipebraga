@@ -4,13 +4,13 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
 
-  display: flex;
-  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 `;
 
 export const Content = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
-
 `;
