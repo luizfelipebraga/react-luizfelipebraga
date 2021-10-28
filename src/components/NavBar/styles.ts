@@ -1,11 +1,17 @@
 import styled from 'styled-components';
 
-export const Nav = styled.nav`
+interface INavProps {
+  navScroll: boolean;
+}
+
+export const Nav = styled.nav<INavProps>`
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   transition: all 0.5s ease-in-out;
+
+  background: ${(props) => props.navScroll ? '#121111' : 'transparent'};
 
   position: fixed;
   z-index: 1;
@@ -47,67 +53,6 @@ export const Nav = styled.nav`
 
   @media(max-width: 1030px) {
     
-  }
-`;
-
-export const NavActive = styled.nav `
-  background: linear-gradient(90deg, #2b2a4a 0%, #2b2a4a 6%, #75709e 100%);
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  transition: all 0.5s ease-in-out;
-
-  padding: 0 2rem;
-  position: fixed;
-  z-index: 1;
-
-  img {
-    height: 5rem;
-    cursor: pointer;
-
-    transition: all 0.5s ease-in-out;
-    &:hover {
-      transform: rotate(50deg)
-    }
-  }
-
-  ul {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    transition: all 0.5s ease-in-out;
-
-    a {
-      display: flex;
-      gap: .5rem;
-      color: #f2f2f2;
-      font-size: 1.1rem;
-      transition: all 0.2s ease-in-out;
-
-      span {
-        color: #f9a251;
-      }
-
-      &:hover {
-        color: #f9a251;
-      }
-    }
-  }
-`;
-
-//when scroll down desappear nav
-export const ScrollDown = styled.div` 
-  Nav {
-      transform: translate3d(0, -100%, 0);
-  }
-`;
-
-//when scroll up appear nav
-export const ScrollUp = styled.div`
-  Nav {
-      filter: drop-shadow(0 -10px 20px rgb(0, 0, 0));
   }
 `;
 
