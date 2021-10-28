@@ -7,6 +7,10 @@ export const Container = styled.div`
   left: 50px;
   right: auto;
   z-index: 10;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Ul = styled.ul`

@@ -8,6 +8,9 @@ export const Container = styled.div`
   right: 50px;
   z-index: 10;
 
+  @media (max-width: 768px) {
+    width: 200px;
+  }
 `;
 
 export const Box = styled.div`
@@ -30,6 +33,10 @@ export const Box = styled.div`
       color: #f9a251;
       transform: translateY(-3px);
     }
+
+    @media(max-width: 768px) {
+      writing-mode: horizontal-tb;
+    }
   }
 
   &:after {
@@ -39,5 +46,9 @@ export const Box = styled.div`
     height: 93px;
     margin: 0px auto;
     background: #fff;
+
+    @media(max-width: 768px) {
+      width: 0px;
+    }
   }
 `;
