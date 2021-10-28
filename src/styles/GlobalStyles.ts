@@ -11,7 +11,7 @@ export default createGlobalStyle`
         height: 100%;
         width : 100%;
         scroll-behavior: smooth;
-        background-image: linear-gradient(91.18deg, #0d0d0e 32.63%, #141416 62.22%);
+        
     }
 
     h1, h2, h3, h4, h5, span, button  {
@@ -29,5 +29,21 @@ export default createGlobalStyle`
 
     ul {
         color: #000;
+    }
+
+    @media (max-width: 1360px) {
+
+    }
+
+    @media (max-width: 1100px) {
+        html {
+            font-size: 88%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        html {
+            font-size: 84%;
+        }
     }
 `;

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Nav, ResumeButton, BoxCvButtons, NavActive } from "./styles"
+import { Nav, ResumeButton, BoxCvButtons } from "./styles"
 import LogoImg from '../../images/orangeCircle.png';
 
 import PtResume from '../../documents/resume.pdf';
@@ -23,23 +23,7 @@ export const NavBar = () => {
   window.addEventListener('scroll', changeBackground);
 
   return (
-    navBar ? (
-      <NavActive>
-        <Link to="/"><img src={LogoImg} alt="Logo" /></Link>
-        <ul>
-          <Link to="/"><span>01.</span>Home</Link>
-          <Link to="/about"><span>02.</span>About</Link>
-          <Link to="/projects"><span>03.</span>Projects</Link>
-          <Link to="/contact"><span>04.</span>Contact</Link>
-          <BoxCvButtons>
-            <ResumeButton href={PtResume} target="_blank">Curriculo</ResumeButton>
-            <ResumeButton href={EngResume} target="_blank">Resume</ResumeButton>
-          </BoxCvButtons>
-        </ul>
-      </NavActive >
-
-    ) : (
-      <Nav>
+      <Nav navScroll={navBar}>
         <Link to="/"><img src={LogoImg} alt="Logo" /></Link>
         <ul>
           <Link to="/"><span>01.</span>Home</Link>
@@ -52,6 +36,5 @@ export const NavBar = () => {
           </BoxCvButtons>
         </ul>
       </Nav >
-    )
   )
 }
