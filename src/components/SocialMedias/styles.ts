@@ -7,6 +7,10 @@ export const Container = styled.div`
   left: 50px;
   right: auto;
   z-index: 10;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Ul = styled.ul`
@@ -14,8 +18,8 @@ export const Ul = styled.ul`
   flex-direction: column;
   -webkit-box-align: center;
   align-items: center;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 
   li a {
