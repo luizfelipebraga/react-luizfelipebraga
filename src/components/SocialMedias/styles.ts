@@ -18,8 +18,8 @@ export const Ul = styled.ul`
   flex-direction: column;
   -webkit-box-align: center;
   align-items: center;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 
   li a {
