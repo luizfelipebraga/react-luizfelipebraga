@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const HomePageSection = styled.section`
+export const HomeSection = styled.section`
   height: 100%;
   width: 100%;
 `;
@@ -10,7 +10,7 @@ export const Container = styled.div`
   height: 90%;
 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   gap: 5rem;
 
