@@ -14,8 +14,13 @@ export default createGlobalStyle`
         
     }
 
-    h1, h2, h3, h4, h5, span, button  {
+    h1, h2, h3, h4, h5, span, button, p  {
         font-family: 'Inter', sans-serif;
+        color: #949494;
+    }
+
+    b, strong {
+        color: #ffb464;
     }
 
     a {
