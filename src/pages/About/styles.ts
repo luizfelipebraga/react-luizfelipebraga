@@ -44,7 +44,7 @@ export const AboutBox = styled.div`
       position: relative;
       top: 0px;
       left: 15px;
-      width: 200px;
+      width: 650px;
       height: 1px;
       background-color: #686868;
     }
