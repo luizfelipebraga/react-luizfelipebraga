@@ -36,19 +36,27 @@ export default createGlobalStyle`
         color: #000;
     }
 
-    @media (max-width: 1360px) {
+    @media (min-width: 1600px) {
+        html {
+            font-size: 92%;
+        }
+    }
 
+    @media (max-width: 1360px) {
+        html {
+            font-size: 89%;
+        }
     }
 
     @media (max-width: 1100px) {
         html {
-            font-size: 88%;
+            font-size: 85%;
         }
     }
 
     @media (max-width: 768px) {
         html {
-            font-size: 84%;
+            font-size: 80%;
         }
     }
 `;
