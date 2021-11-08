@@ -9,6 +9,8 @@ export const ContainerCard = styled.div`
     max-width: 250px;
     height: 250px;
 
+    border-radius: 8px;
+
     background-color: #252525;
 `;
 
