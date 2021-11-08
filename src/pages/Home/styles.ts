@@ -20,7 +20,7 @@ export const Container = styled.div`
     height: 15rem;
   }
 
-  @media(max-width:1320px) {
+  @media(max-width:1400px) {
     >img {
       display: none;
     }
@@ -70,7 +70,7 @@ export const AsideTitle = styled.aside`
       align-items: right;
 
       b {
-        color: #ee9a4d;
+        color: #ffb464;
       }
     }
 `;
