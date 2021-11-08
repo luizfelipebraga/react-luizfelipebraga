@@ -1,9 +1,22 @@
+import { Card } from '../../components/Card'
 
+import {
+  Container,
+  GridProjects,
+  BoxProject
+} from './styles'
 
 export function ProjectsPage() {
   return (
-    <div>
-      
-    </div>
+    <Container>
+      <GridProjects>
+
+        <Card
+          title="Supply Delivery"
+          content="Plataforma de gerenciamento de produtos"
+          url="" />
+
+      </GridProjects>
+    </Container>
   )
 }
