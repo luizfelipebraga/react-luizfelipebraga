@@ -1,5 +1,5 @@
 import {
-  HomePageSection,
+  HomeSection,
   Container,
   AsideTitle,
   GithubButton,
@@ -12,7 +12,7 @@ import { WaveBottom } from '../../components/Waves/wavebottom';
 
 export function HomePage() {
   return (
-    <HomePageSection>
+    <HomeSection>
       
       <Container>
         <img src={RuivoProgramando} alt="Imagem de uma pessoa programando" />
@@ -30,6 +30,6 @@ export function HomePage() {
 
       </Container>
       <WaveBottom />
-    </HomePageSection>
+    </HomeSection>
   )
 }
