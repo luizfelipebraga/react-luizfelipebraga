@@ -24,6 +24,8 @@ export default createGlobalStyle`
     }
 
     a {
+        list-style: none;
+        text-decoration: none;
         cursor: pointer;
     }
 
@@ -42,13 +44,13 @@ export default createGlobalStyle`
         }
     }
 
-    @media (max-width: 1360px) {
+    @media (max-width: 1200px) {
         html {
             font-size: 89%;
         }
     }
 
-    @media (max-width: 1100px) {
+    @media (max-width: 1024px) {
         html {
             font-size: 85%;
         }
@@ -57,6 +59,18 @@ export default createGlobalStyle`
     @media (max-width: 768px) {
         html {
             font-size: 80%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        html {
+            font-size: 78%;
+        }
+    }
+
+    @media (max-width: 320px) {
+        html {
+            font-size: 75%;
         }
     }
 `;

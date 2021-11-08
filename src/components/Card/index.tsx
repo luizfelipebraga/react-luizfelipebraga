@@ -12,14 +12,14 @@ interface ICardProps {
     children?: React.ReactNode;
 }
 
-export function Card({ title, content, url }:ICardProps) {
+export function Card({ title, content, url }: ICardProps) {
     return (
         <ContainerCard>
             <Title>{title}</Title>
             <Content>{content}</Content>
 
             <Url href={url}>
-
+                <span>github</span>
             </Url>
         </ContainerCard>
     );

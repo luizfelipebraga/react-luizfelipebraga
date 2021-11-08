@@ -5,7 +5,8 @@ export const Container = styled.div`
     width: 100%;
 
     margin: 0px auto;
-    max-width: 1200px;
+    padding: 150px 0;
+    max-width: 900px;
 `;
 
 export const GridProjects = styled.div`
