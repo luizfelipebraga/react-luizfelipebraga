@@ -8,7 +8,19 @@ import {
 
 import RuivoProgramando from '../../svgs/hello-ruivo.svg';
 
+//library
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
+import Aos from 'aos';
+
 export function HomePage() {
+
+  useEffect(() => {
+    Aos.init({
+      duration: 2000
+    });
+  },[])
+
   return (
     <HomeSection>
       
