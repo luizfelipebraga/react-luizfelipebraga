@@ -16,7 +16,7 @@ export const Nav = styled.nav<INavProps>`
   position: fixed;
   z-index: 1;
 
-  padding: 1rem 2rem;
+  padding: ${(props) => props.navScroll ? '1rem 2rem' : '1rem 1rem'};
 
   img {
     height: 5rem;
