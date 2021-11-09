@@ -7,7 +7,7 @@ export const HomeSection = styled.section`
 
 export const Container = styled.div`
   width: 100%;
-  height: 90%;
+  height: 100%;
 
   display: flex;
   justify-content: center;
