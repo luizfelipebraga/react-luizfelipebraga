@@ -17,7 +17,15 @@ export const Wave = styled.div`
     width: calc(234% + 1.3px);
     height: 123px;
     transform: rotateY(180deg);
+
+    @media (max-width: 900px) {
+      height: 85px;
+    }
   }
+
+  @media (max-width:320px) {
+      display: none;
+    }
 `;
 
 export const ShapeFill = styled.path`

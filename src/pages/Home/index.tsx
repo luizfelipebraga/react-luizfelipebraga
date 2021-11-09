@@ -18,13 +18,13 @@ export function HomePage() {
         <img src={RuivoProgramando} alt="Imagem de uma pessoa programando" />
 
         <AsideTitle>
-          <span>Hello World,</span>
-          <span>I&apos;m  Luiz Felipe</span>
-          <p>I’m a Full Stack Developer Jr specializing in building exceptional digital experiences.
+          <span>Hello, my name is</span>
+          <span>Luiz Felipe Braga</span>
+          <p>I’m a Full-Stack Developer Jr specializing in building exceptional digital experiences.
             Currently, I’m focused on building <b>ReactJs w/ TypeScript</b> and <b>NodeJs</b> applications.</p>
 
           <BoxGithubButton>
-            <GithubButton href="/projects">Check out my Projects</GithubButton>
+            <GithubButton href="/projects">Check out my projects!</GithubButton>
           </BoxGithubButton>
         </AsideTitle>
 

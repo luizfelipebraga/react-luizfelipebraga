@@ -14,7 +14,7 @@ export const Container = styled.div`
   align-items: center;
   gap: 5rem;
 
-  padding: 100px;
+  padding: 100px 16px;
 
   >img {
     height: 15rem;
@@ -31,7 +31,7 @@ export const AsideTitle = styled.aside`
   display: flex;
   gap: 1rem;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 
   z-index: 5;
 
@@ -42,24 +42,33 @@ export const AsideTitle = styled.aside`
     color: #fff;
 
     &:first-child {
-    background-repeat: repeat;
-    background-size: 100%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    letter-spacing: 0.5rem;
-    background-image: linear-gradient(91.18deg, #fff 32.63%, #f6a050 62.22%);
-    font-size: 2rem;
+      color: #ffb464;
+      font-weight: 600;
+      font-size: 1.5rem;
+      width: 100%;
+      max-width: 540px;
+      text-align: left;
+
+
+    @media (max-width:1400px) {
+        font-size: 1.1rem;
+      }
+
+      @media (max-width:690px) {
+        display: none;
+      }
     }
 
     &:nth-child(2) {
-      font-size: 4rem;
+      font-size: clamp(40px, 8vw, 80px);
+      text-transform: capitalize;
       font-weight: bold;
+
+      @media (max-width:320px) {
+        font-size: 2rem;
+      }
     }
     
-    text-transform: uppercase;
   }
 
   p {

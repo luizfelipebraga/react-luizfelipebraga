@@ -3,7 +3,6 @@ import { Card } from '../../components/Card'
 import {
   Container,
   GridProjects,
-  BoxProject
 } from './styles'
 
 export function ProjectsPage() {
