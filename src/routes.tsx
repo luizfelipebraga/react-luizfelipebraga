@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Main } from './components/Layout/main';
 import { AboutPage } from './pages/About';
@@ -20,7 +19,7 @@ export function Routes() {
           <Route path="/projects" component={ProjectsPage} />
           <Route path="/contact" component={ContactPage} />
         </Switch>
-      </Main >
+      </Main>
     </BrowserRouter>
   )
 }

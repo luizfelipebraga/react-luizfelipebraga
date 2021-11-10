@@ -5,6 +5,8 @@ import {
     Url
 } from './styles'
 
+import { Link } from 'react-router-dom';
+
 interface ICardProps {
     title: string;
     content: string;
@@ -14,13 +16,17 @@ interface ICardProps {
 
 export function Card({ title, content, url }: ICardProps) {
     return (
-        <ContainerCard>
-            <Title>{title}</Title>
-            <Content>{content}</Content>
+        <Link to={url}>
+            <ContainerCard>
+                <Title>{title}</Title>
+                <Content>{content}</Content>
 
-            <Url href={url}>
-                <span>github</span>
-            </Url>
-        </ContainerCard>
+                <Url>
+                    <span>github</span>
+                    <span>React</span>
+                    <span>github</span>
+                </Url>
+            </ContainerCard>
+        </Link>
     );
 }

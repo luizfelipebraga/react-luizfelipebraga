@@ -11,8 +11,8 @@ export function ProjectsPage() {
       <GridProjects>
 
         <Card
-          title="Supply Delivery"
-          content="Plataforma de gerenciamento de produtos"
+          title="LetMeAsk"
+          content=""
           url="" />
 
       </GridProjects>
