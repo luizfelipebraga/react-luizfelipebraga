@@ -7,23 +7,23 @@ import {
 } from './styles';
 
 import RuivoProgramando from '../../svgs/hello-ruivo.svg';
+import { useEffect } from 'react';
 
 //library
 import "aos/dist/aos.css";
-import { useEffect } from 'react';
 import Aos from 'aos';
 
 export function HomePage() {
 
   useEffect(() => {
     Aos.init({
-      duration: 2000
+      duration: 2000,
+      once: true
     });
-  },[])
+  }, [])
 
   return (
-    <HomeSection>
-      
+    <HomeSection> 
       <Container>
         <img src={RuivoProgramando} alt="Imagem de uma pessoa programando" />
 
@@ -36,10 +36,8 @@ export function HomePage() {
           <BoxGithubButton>
             <GithubButton href="/projects">Check out my projects!</GithubButton>
           </BoxGithubButton>
-        </AsideTitle>
-
+        </AsideTitle>  
       </Container>
-      {/* <WaveBottom /> */}
     </HomeSection>
   )
 }

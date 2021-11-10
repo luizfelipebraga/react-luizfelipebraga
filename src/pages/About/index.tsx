@@ -16,7 +16,7 @@ export function AboutPage() {
       </AboutBox>
 
       <Container>
-        <MyselfImg src={FelipeImg} alt="Felipe imagem" />
+        <MyselfImg src={FelipeImg} alt="Felipe image" />
 
         <BoxIntroduce>
           <p>Hi! My name Luiz, 18 years. - <strong>JavaScript Full Stack Developer</strong>
