@@ -11,8 +11,8 @@ export function ProjectsPage() {
       <GridProjects>
 
         <Card
-          title="LetMeAsk"
-          content="Projeto de Perguntas e Respostas similar ao Brainly"
+          title="Nlw Let me Ask"
+          content="Projeto de Perguntas e Respostas similar ao Brainly, com intuito de aprender um pouco mais sobre ContextAPI e StyledComponents."
           url="https://github.com/luizfelipebraga/react-letmeask-nlw"
         >
           <span>ReactJs</span>

@@ -38,8 +38,9 @@ export const Title = styled.h2`
 `;
 
 export const Content = styled.span`
-    color: #f9f9f9;
-    font-size: .9rem;
+    color: #c7c3c3;
+    font-size: .84rem;
+    line-height: 25px;
 `;
 
 export const Url = styled.div`
