@@ -2,18 +2,17 @@ import {
   AboutSection,
   Container,
   MyselfImg,
-  AboutBox,
   BoxIntroduce
 } from './styles';
+
 import FelipeImg from '../../images/myselfpicture.jpg';
+import { SubTitle } from '../../components/SubTitle';
 
 export function AboutPage() {
   return (
     <AboutSection>
 
-      <AboutBox>
-        <h2><span>02.</span> About Me</h2>
-      </AboutBox>
+      <SubTitle number={'02'} title={'About Me'}/>
 
       <Container>
         <MyselfImg src={FelipeImg} alt="Felipe image" />
