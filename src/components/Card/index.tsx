@@ -2,7 +2,8 @@ import {
     ContainerCard,
     Title,
     Content,
-    Url
+    Url,
+    BoxProject
 } from './styles'
 
 import { Link } from 'react-router-dom';
@@ -14,19 +15,19 @@ interface ICardProps {
     children?: React.ReactNode;
 }
 
-export function Card({ title, content, url }: ICardProps) {
+export function Card({ title, content, url, children }: ICardProps) {
     return (
-        <Link to={url}>
+        <a href={url} target="_blank" rel="noreferrer">
             <ContainerCard>
-                <Title>{title}</Title>
-                <Content>{content}</Content>
+                <BoxProject>
+                    <Title>{title}</Title>
+                    <Content>{content}</Content>
+                </BoxProject>
 
                 <Url>
-                    <span>github</span>
-                    <span>React</span>
-                    <span>github</span>
+                    {children}
                 </Url>
             </ContainerCard>
-        </Link>
+        </a>
     );
 }
