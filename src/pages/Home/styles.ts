@@ -14,7 +14,6 @@ export const Container = styled.div`
   align-items: center;
   gap: 5rem;
 
-  padding: 100px 16px;
 
   >img {
     height: 15rem;
@@ -96,7 +95,6 @@ export const BoxGithubButton = styled.div`
 export const GithubButton = styled.a`
   text-decoration: none;
   font-size: 1rem;
-  /* box-shadow: 0 11px 36px 0 rgba(70, 89, 138, 0.25); */
   margin-right: 1rem;
 
   overflow: hidden;
