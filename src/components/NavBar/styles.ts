@@ -16,7 +16,9 @@ export const Nav = styled.nav<INavProps>`
   position: fixed;
   z-index: 1;
 
-  padding: ${(props) => props.navScroll ? '1rem 2rem' : '1rem 1rem'};
+  font-size:${(props) => props.navScroll ? '.8rem' : '1rem'};
+
+  padding: ${(props) => props.navScroll ? '.3rem 2rem' : '1rem 1rem'};
 
   img {
     height: 5rem;
@@ -38,7 +40,8 @@ export const Nav = styled.nav<INavProps>`
       display: flex;
       gap: .5rem;
       color: #f2f2f2;
-      font-size: 1.1rem;
+      font-size:${(props) => props.navScroll ? '.9rem' : '1rem'};
+
       transition: all 0.2s ease-in-out;
 
       span {
@@ -67,7 +70,7 @@ export const BoxCvButtons = styled.div`
 export const ResumeButton = styled.a`
     text-decoration: none;
     text-transform: uppercase;
-    font-size: .8rem !important;
+    font-size: .7rem !important;
     margin-right: 1rem;
 
     overflow: hidden;
