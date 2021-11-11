@@ -30,8 +30,10 @@ export function HomePage() {
         <AsideTitle>
           <span>Hello, my name is</span>
           <span>Luiz Felipe Braga</span>
-          <p>I’m a Full-Stack Developer Jr specializing in building exceptional digital experiences.
-            Currently, I’m focused on building <b>ReactJs</b> and <b>NodeJs</b> applications both using <b>TypeScript</b>.</p>
+          <span>FullStack Jr.</span>
+          <p>Specializing to become a exceptional web developer.
+            Currently, I’m focused on building <b>ReactJs</b> & <b>NodeJs</b> applications using <b>TypeScript</b>.
+            Click on the button below to see my knowlegements and projects.</p>
 
           <BoxGithubButton>
             <GithubButton href="/projects">Check out my projects!</GithubButton>

@@ -58,7 +58,7 @@ export const AsideTitle = styled.aside`
       }
     }
 
-    &:nth-child(2) {
+    &:nth-child(2), &:nth-child(3) {
       font-size: clamp(40px, 8vw, 80px);
       text-transform: capitalize;
       font-weight: bold;
@@ -66,6 +66,11 @@ export const AsideTitle = styled.aside`
       @media (max-width:320px) {
         font-size: 2rem;
       }
+    }
+
+    &:nth-child(3) {
+      font-size: clamp(40px, 8vw, 60px);
+      color: #b09c88;
     }
     
   }
