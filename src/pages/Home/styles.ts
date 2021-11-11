@@ -62,10 +62,6 @@ export const AsideTitle = styled.aside`
       font-size: clamp(40px, 8vw, 80px);
       text-transform: capitalize;
       font-weight: bold;
-
-      @media (max-width:320px) {
-        font-size: 2rem;
-      }
     }
 
     &:nth-child(3) {
