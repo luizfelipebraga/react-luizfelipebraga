@@ -51,4 +51,12 @@ export const Url = styled.div`
     cursor: pointer;
     list-style: none;
     text-decoration: none;
+
+    a {
+        span {
+            &:hover {
+            color: #e18451;
+            }
+        }
+    }
 `;
