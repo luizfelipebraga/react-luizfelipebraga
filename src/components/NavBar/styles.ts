@@ -21,7 +21,7 @@ export const Nav = styled.nav<INavProps>`
   padding: ${(props) => props.navScroll ? '.3rem 2rem' : '1rem 1rem'};
 
   img {
-    height: 5rem;
+    height: 4rem;
     cursor: pointer;
 
     transition: all 0.5s ease-in-out;
