@@ -27,9 +27,9 @@ export const Container = styled.div`
 
 export const AsideTitle = styled.aside`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  flex-direction: column;
   align-items: left;
 
   z-index: 5;
@@ -68,7 +68,6 @@ export const AsideTitle = styled.aside`
       font-size: clamp(40px, 8vw, 60px);
       color: #b09c88;
     }
-    
   }
 
   p {
