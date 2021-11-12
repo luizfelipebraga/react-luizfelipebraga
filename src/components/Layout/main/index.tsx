@@ -1,19 +1,24 @@
 import { AuthorNameComponent } from "../../Name";
 import { NavBar } from "../../NavBar"
 import { SocialMediaSideBar } from "../../SocialMedias";
-import { Container } from "./styles"
-import { Content } from './styles';
+import { Container, Content, SimpleBarStyled } from "./styles"
+
+import 'simplebar/dist/simplebar.min.css';
 
 export const Main: React.FC = ({ children }) => {
   return (
     <Container>
       <NavBar />
-      <SocialMediaSideBar/>
-      <AuthorNameComponent/>
+      <SocialMediaSideBar />
+      <AuthorNameComponent />
 
-      <Content>
-        {children}
-      </Content>
+      <SimpleBarStyled>
+        <Content>
+          {children}
+        </Content>
+      </SimpleBarStyled>
+
+
 
     </Container>
   )

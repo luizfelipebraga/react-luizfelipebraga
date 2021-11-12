@@ -3,6 +3,10 @@ import styled from 'styled-components';
 export const Container = styled.div`
     height: 100%;
     width: 100%;
+
+    padding: 110px 0 50px 0;
+
+    max-width: 1000px;
 `;
 
 export const GridProjects = styled.div`
