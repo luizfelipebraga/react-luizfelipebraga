@@ -73,7 +73,6 @@ export const ResumeButton = styled.a`
     font-size: .7rem !important;
     margin-right: 1rem;
 
-    overflow: hidden;
     font-weight: bold;
     color: #fff;
 

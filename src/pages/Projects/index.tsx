@@ -45,7 +45,7 @@ export function ProjectsPage() {
         </Card>
 
         <Card
-          title="Busi Api"
+          title="Busi"
           content="Api simples para entender um pouco mais sobre o mundo da programação funcional com Elixir"
           url="https://github.com/luizfelipebraga/elixir-busi-api">
           <span>Elixir</span>

@@ -6,10 +6,14 @@ export const Container = styled.div`
   bottom: 0;
   left: auto;
   right: 50px;
-  z-index: 10;
+  z-index: 10;  
 
   @media (max-width: 768px) {
     width: 200px;
+  }
+
+  @media screen and (max-height: 768px) and (max-width: 800px) {
+    display: none;
   }
 `;
 

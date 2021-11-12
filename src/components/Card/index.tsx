@@ -6,8 +6,6 @@ import {
     BoxProject
 } from './styles'
 
-import { Link } from 'react-router-dom';
-
 interface ICardProps {
     title: string;
     content: string;
