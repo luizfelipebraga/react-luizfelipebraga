@@ -12,6 +12,9 @@ import { useEffect } from 'react';
 //library
 import "aos/dist/aos.css";
 import Aos from 'aos';
+import { AboutPage } from '../About';
+import { ProjectsPage } from '../Projects';
+import { ContactPage } from '../Contact';
 
 export function HomePage() {
 
@@ -23,7 +26,7 @@ export function HomePage() {
   }, [])
 
   return (
-    <HomeSection> 
+    <HomeSection>
       <Container>
         <img src={RuivoProgramando} alt="Imagem de uma pessoa programando" />
 
@@ -38,8 +41,9 @@ export function HomePage() {
           <BoxGithubButton>
             <GithubButton href="/projects">Check out my projects!</GithubButton>
           </BoxGithubButton>
-        </AsideTitle>  
+        </AsideTitle>
       </Container>
     </HomeSection>
+
   )
 }

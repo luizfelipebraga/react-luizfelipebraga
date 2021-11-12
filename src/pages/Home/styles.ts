@@ -3,6 +3,12 @@ import styled from 'styled-components';
 export const HomeSection = styled.section`
   height: 100%;
   width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 `;
 
 export const Container = styled.div`
@@ -11,7 +17,6 @@ export const Container = styled.div`
   align-items: center;
   gap: 5rem;
 
-  padding: 0 1rem;
 
 
   >img {

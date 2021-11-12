@@ -34,7 +34,7 @@ export const NavBar = () => {
       <Link to="/"><img src={LogoImg} alt="Logo" /></Link>
       <ul>
         <Link to="/"><span>01.</span>Home</Link>
-        <Link to="/about"><span>02.</span>About</Link>
+        <Link to="/#about"><span>02.</span>About</Link>
         <Link to="/projects"><span>03.</span>Projects</Link>
         <Link to="/contact"><span>04.</span>Contact</Link>
         <BoxCvButtons>

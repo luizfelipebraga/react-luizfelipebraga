@@ -10,7 +10,7 @@ import { SubTitle } from '../../components/SubTitle';
 
 export function AboutPage() {
   return (
-    <AboutSection>
+    <AboutSection id="about">
 
       <SubTitle number={'02'} title={'About Me'}/>
 

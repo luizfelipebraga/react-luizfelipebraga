@@ -1,4 +1,5 @@
 import { Card } from '../../components/Card'
+import { SubTitle } from '../../components/SubTitle'
 
 import {
   Container,
@@ -7,7 +8,9 @@ import {
 
 export function ProjectsPage() {
   return (
-    <Container>
+    <Container data-simplebar>
+      <SubTitle number={'03'} title={'Projects'}/>
+
       <GridProjects>
 
         <Card
