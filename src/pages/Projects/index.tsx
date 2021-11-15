@@ -79,7 +79,7 @@ export function ProjectsPage() {
 
       </GridProjects>
 
-      <ProjectButtonComponent href="https://github.com/luizfelipebraga" target="_blank" rel="noreferrer">See more</ProjectButtonComponent>
+      <ProjectButtonComponent href="https://github.com/luizfelipebraga?tab=repositories" target="_blank" rel="noreferrer">See more</ProjectButtonComponent>
     </Container>
   )
 }
