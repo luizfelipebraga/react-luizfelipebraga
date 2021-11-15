@@ -2,7 +2,6 @@ import {
     MainSection
 } from './styles';
 
-import RuivoProgramando from '../../svgs/hello-ruivo.svg';
 import { useEffect } from 'react';
 
 //library
@@ -29,6 +28,5 @@ export function MainPage() {
             <ProjectsPage />
             <ContactPage />
         </MainSection>
-
     )
 }

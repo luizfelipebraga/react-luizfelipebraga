@@ -39,7 +39,7 @@ export const Title = styled.h2`
 
 export const Content = styled.span`
     color: #c7c3c3;
-    font-size: .84rem;
+    font-size: clamp(14px, 2vw, 10px);
     line-height: 25px;
 `;
 
@@ -47,7 +47,7 @@ export const Url = styled.div`
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: .85rem;
+    font-size: clamp(13px, 2vw, 10px);
     cursor: pointer;
     list-style: none;
     text-decoration: none;

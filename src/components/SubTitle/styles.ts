@@ -12,6 +12,7 @@ export const Title = styled.div`
     justify-content: center;
     align-items: center;
     position: relative;
+    white-space: nowrap;
 
     gap: 10px;
     font-size: 1.7rem;

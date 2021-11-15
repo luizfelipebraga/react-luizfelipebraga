@@ -11,6 +11,13 @@ export const AboutSection = styled.section`
 export const Container = styled.div`
   display: flex;
   gap: 2rem;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    >img {
+      display: none;
+    }
+  }
 `;
 
 export const MyselfImg = styled.img`
@@ -25,6 +32,7 @@ export const BoxIntroduce = styled.div`
 
   max-width: 550px;
 
-  font-size: 1rem;
+  /* font-size: 1rem; */
+  font-size: clamp(13px, 5vw, 16px);
   line-height: 30px;
 `;

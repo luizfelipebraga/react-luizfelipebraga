@@ -15,6 +15,10 @@ export const Container = styled.div`
   @media screen and (max-height: 768px) and (max-width: 800px) {
     display: none;
   }
+
+  @media screen and (max-height: 1024px) and (max-width: 1200px) {
+    display: none
+  }
 `;
 
 export const Box = styled.div`

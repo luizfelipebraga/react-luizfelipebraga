@@ -11,12 +11,10 @@ import { SubTitle } from '../../components/SubTitle';
 export function AboutPage() {
   return (
     <AboutSection id="about">
-
       <SubTitle number={'02'} title={'About Me'}/>
 
       <Container>
         <MyselfImg src={FelipeImg} alt="Felipe image" />
-
         <BoxIntroduce>
           <p>Hi! My name Luiz, 18 years. - <strong>JavaScript Full Stack Developer</strong>
           <br/> I am a person who always looking for constant technical and personal evolution.
@@ -31,7 +29,6 @@ export function AboutPage() {
           </p>
         </BoxIntroduce>
       </Container>
-
     </AboutSection >
   )
 }

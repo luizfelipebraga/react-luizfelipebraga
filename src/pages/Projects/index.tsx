@@ -1,3 +1,4 @@
+import { ProjectButtonComponent } from '../../components/Buttons/Project'
 import { Card } from '../../components/Card'
 import { SubTitle } from '../../components/SubTitle'
 
@@ -8,7 +9,7 @@ import {
 
 export function ProjectsPage() {
   return (
-    <Container data-simplebar>
+    <Container data-simplebar id="projects">
       <SubTitle number={'03'} title={'Projects'}/>
 
       <GridProjects>
@@ -77,6 +78,8 @@ export function ProjectsPage() {
         </Card>
 
       </GridProjects>
+
+      <ProjectButtonComponent href="https://github.com/luizfelipebraga" target="_blank" rel="noreferrer">See more</ProjectButtonComponent>
     </Container>
   )
 }

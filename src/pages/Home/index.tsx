@@ -2,8 +2,6 @@ import {
   HomeSection,
   Container,
   AsideTitle,
-  GithubButton,
-  BoxGithubButton,
 } from './styles';
 
 import RuivoProgramando from '../../svgs/hello-ruivo.svg';
@@ -12,9 +10,7 @@ import { useEffect } from 'react';
 //library
 import "aos/dist/aos.css";
 import Aos from 'aos';
-import { AboutPage } from '../About';
-import { ProjectsPage } from '../Projects';
-import { ContactPage } from '../Contact';
+import { ProjectButtonComponent } from '../../components/Buttons/Project';
 
 export function HomePage() {
 
@@ -26,7 +22,7 @@ export function HomePage() {
   }, [])
 
   return (
-    <HomeSection>
+    <HomeSection id="home">
       <Container>
         <img src={RuivoProgramando} alt="Imagem de uma pessoa programando" />
 
@@ -38,9 +34,7 @@ export function HomePage() {
             Currently, I’m focused on building <b>ReactJs</b> & <b>NodeJs</b> applications using <b>TypeScript</b>.
             Click on the button below to see my knowlegements and projects.</p>
 
-          <BoxGithubButton>
-            <GithubButton href="/projects">Check out my projects!</GithubButton>
-          </BoxGithubButton>
+          <ProjectButtonComponent href="#projects">Check out my projects!</ProjectButtonComponent>
         </AsideTitle>
       </Container>
     </HomeSection>

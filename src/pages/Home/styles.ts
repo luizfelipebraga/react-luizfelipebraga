@@ -17,8 +17,6 @@ export const Container = styled.div`
   align-items: center;
   gap: 5rem;
 
-
-
   >img {
     height: 15rem;
   }
@@ -39,7 +37,6 @@ export const AsideTitle = styled.aside`
 
   z-index: 5;
 
-
   span {
     display: flex;
     font-size: .8rem;
@@ -52,7 +49,6 @@ export const AsideTitle = styled.aside`
       width: 100%;
       max-width: 540px;
       text-align: left;
-
 
     @media (max-width:1400px) {
         font-size: 1.1rem;
@@ -77,7 +73,7 @@ export const AsideTitle = styled.aside`
 
   p {
       color: #949494;
-      font-size: 1rem;
+      font-size: clamp(13px, 2vw, 16px);
       max-width: 540px;
       line-height: 25px;
       align-items: right;

@@ -8,7 +8,7 @@ export const Container = styled.div`
   right: auto;
   z-index: 10;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     display: none;
   }
 `;
