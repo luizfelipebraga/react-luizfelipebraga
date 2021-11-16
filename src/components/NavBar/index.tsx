@@ -35,7 +35,7 @@ export const NavBar = () => {
         <Link to="#home"><span>01.</span>Home</Link>
         <Link to="#about"><span>02.</span>About</Link>
         <Link to="#projects"><span>03.</span>Projects</Link>
-        <Link to="/contact"><span>04.</span>Contact</Link>
+        <Link to="#contact"><span>04.</span>Contact</Link>
         <BoxCvButtons>
           <ResumeButton href={PtResume} target="_blank">Curriculo</ResumeButton>
           <ResumeButton href={EngResume} target="_blank">Resume</ResumeButton>
