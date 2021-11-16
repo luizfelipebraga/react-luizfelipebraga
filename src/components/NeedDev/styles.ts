@@ -13,11 +13,15 @@ export const Box = styled.div`
   gap: 2rem;
 
   span {
-    font-size: clamp(2rem, 5vw, 5rem);
+    font-size: clamp(2rem, 5vw, 4.5rem);
+
+    &:not(:first-child) {
+      color: #fff;
+    }
 
     &:first-child {
-      letter-spacing: .3rem;
-      font-size: clamp(1.5rem, 5vw, 3rem);
+      letter-spacing: .6rem;
+      font-size: clamp(1.5rem, 5vw, 2.7rem);
     }
   }
 `;

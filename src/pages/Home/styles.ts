@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const HomeSection = styled.section`
   height: 100%;
   width: 100%;
+
+  padding: 100px 0 0 0;
 `;
 
 export const Container = styled.div`

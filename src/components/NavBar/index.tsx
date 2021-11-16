@@ -27,12 +27,16 @@ export const NavBar = () => {
     }
   }, [])
 
+  function ScrollToTop(): void {
+    window.scrollTo(0, 1);
+  }
+
 
   return (
     <Nav navScroll={navBar}>
-      <Link to="/"><img src={LogoImg} alt="Logo" /></Link>
+      <Link to="/" onClick={ScrollToTop}><img src={LogoImg} alt="Logo" /></Link>
       <ul>
-        <Link to="#home"><span>01.</span>Home</Link>
+        <Link to="/" onClick={ScrollToTop}><span>01.</span>Home</Link>
         <Link to="#about"><span>02.</span>About</Link>
         <Link to="#projects"><span>03.</span>Projects</Link>
         <Link to="#contact"><span>04.</span>Contact</Link>
