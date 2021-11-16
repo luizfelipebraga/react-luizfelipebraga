@@ -1,9 +1,10 @@
+import { ContactSection } from "./styles";
 
 
 export function ContactPage() {
   return (
-    <div>
-      
-    </div>
+    <ContactSection>
+        
+    </ContactSection>
   )
 }

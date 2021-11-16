@@ -13,7 +13,6 @@ export function ProjectsPage() {
       <SubTitle number={'03'} title={'Projects'}/>
 
       <GridProjects>
-
         <Card
           title="Nlw - Let me Ask"
           content="Projeto de Perguntas e Respostas similar ao Brainly, 
@@ -76,7 +75,6 @@ export function ProjectsPage() {
           <span>Html</span>
           <span>Css</span>
         </Card>
-
       </GridProjects>
 
       <ProjectButtonComponent href="https://github.com/luizfelipebraga?tab=repositories" target="_blank" rel="noreferrer">See more</ProjectButtonComponent>
