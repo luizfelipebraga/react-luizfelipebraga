@@ -2,25 +2,27 @@ import styled from 'styled-components';
 
 interface INavProps {
   navScroll: boolean;
+  isOpen: boolean;
 }
 
 export const Nav = styled.nav<INavProps>`
   display: flex;
-  align-items: center;
+  align-items: ${(props) => (props.isOpen ? "none": "center")};
   justify-content: space-between;
   width: 100%;
   transition: all 0.5s ease-in-out;
 
-  background: ${(props) => props.navScroll ? '#121111' : 'transparent'};
+  background: ${(props) => (props.navScroll || props.isOpen) ? '#121111' : 'transparent'};
 
   position: fixed;
   z-index: 1;
 
   font-size:${(props) => props.navScroll ? '.8rem' : '1rem'};
 
-  padding: ${(props) => props.navScroll ? '.3rem 2rem' : '1rem 1rem'};
+  padding: ${({navScroll, isOpen}) => (navScroll && isOpen)? '.3rem 2rem' : '1rem 2rem' };
 
   img {
+    display: ${(props) => (props.isOpen ? "none": "flex")};
     height: 4rem;
     width: 4rem;
     cursor: pointer;
@@ -34,6 +36,7 @@ export const Nav = styled.nav<INavProps>`
   ul {
     display: flex;
     align-items: center;
+    position: relative;
     gap: 3rem;
     transition: all 0.5s ease-in-out;
 
@@ -55,9 +58,41 @@ export const Nav = styled.nav<INavProps>`
     }
   }
 
-  @media(max-width: 1030px) {
-    
+  @media(max-width: 1280px) {
+    ul {
+      display: ${(props) => (props.isOpen ? "flex": "none")};
+      justify-content: space-between;
+      flex-direction: column;
+      height: ${(props) => (props.isOpen ? "50vh" : "0")};
+      width: ${(props) => (props.isOpen ? "100vw" : "0")};
+      
+      transition: max-height 0.3s ease-in;
+    }
   }
+`;
+
+export const Menu = styled.div`
+  display: flex;
+  font-size: 3rem;
+  flex-direction: column;
+`;
+
+export const Hamburger = styled.div`
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  span {
+    height: 2px;
+    width: 25px;
+    background: #ed9b4d;
+    margin-bottom: 4px;
+    border-radius: 5px;
+  }
+  @media (max-width: 1280px) {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 2rem;
+  } 
 `;
 
 export const BoxCvButtons = styled.div`
