@@ -4,7 +4,7 @@ export const Container = styled.section`
   height: 100%;
   width: 100%;
 
-  margin: 0 0 100px 0; 
+  margin: 0 0 150px 0; 
 `;
 
 export const Box = styled.div`
