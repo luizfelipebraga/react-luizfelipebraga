@@ -10,6 +10,10 @@ export const Nav = styled.nav<INavProps>`
   align-items: ${(props) => (props.isOpen ? "none": "center")};
   justify-content: space-between;
   width: 100%;
+
+  overflow: hidden;
+
+  position: ${(props) => (props.isOpen && 'fixed')};
   transition: all 0.5s ease-in-out;
 
   background: ${(props) => (props.navScroll || props.isOpen) ? '#121111' : 'transparent'};
@@ -17,9 +21,9 @@ export const Nav = styled.nav<INavProps>`
   position: fixed;
   z-index: 1;
 
-  font-size:${(props) => props.navScroll ? '.8rem' : '1rem'};
+  font-size:${(props) => (props.navScroll && !props.isOpen) ? '.8rem' : '1rem'};
 
-  padding: ${({navScroll, isOpen}) => (navScroll && isOpen)? '.3rem 2rem' : '1rem 2rem' };
+  padding: ${({navScroll, isOpen}) => (navScroll || isOpen)? '.3rem 2rem' : '1rem 2rem' };
 
   img {
     display: ${(props) => (props.isOpen ? "none": "flex")};
@@ -44,7 +48,7 @@ export const Nav = styled.nav<INavProps>`
       display: flex;
       gap: .5rem;
       color: #f2f2f2;
-      font-size:${(props) => props.navScroll ? '.9rem' : '1rem'};
+      font-size:${(props) => (props.navScroll && !props.isOpen) ? '.9rem' : '1.5rem'};
 
       transition: all 0.2s ease-in-out;
 
@@ -61,6 +65,8 @@ export const Nav = styled.nav<INavProps>`
   @media(max-width: 1280px) {
     ul {
       display: ${(props) => (props.isOpen ? "flex": "none")};
+      height: 100%;
+      margin: 0 auto;
       justify-content: space-between;
       flex-direction: column;
       height: ${(props) => (props.isOpen ? "50vh" : "0")};
@@ -73,8 +79,12 @@ export const Nav = styled.nav<INavProps>`
 
 export const Menu = styled.div`
   display: flex;
-  font-size: 3rem;
   flex-direction: column;
+
+  @media (max-width: 1280px) {
+    width: 100%;
+    z-index: 1000;
+  } 
 `;
 
 export const Hamburger = styled.div`
@@ -91,7 +101,7 @@ export const Hamburger = styled.div`
   @media (max-width: 1280px) {
     display: flex;
     align-items: flex-end;
-    padding: 0 2rem;
+    padding: 2rem 2rem;
   } 
 `;
 

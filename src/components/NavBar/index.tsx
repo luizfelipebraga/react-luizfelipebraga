@@ -30,6 +30,7 @@ export const NavBar = () => {
 
   function ScrollToTop(): void {
     window.scrollTo(0, 1);
+    setIsOpen(false);
   }
 
   return (
@@ -49,9 +50,9 @@ export const NavBar = () => {
 
         <ul>
           <Link to="/" onClick={ScrollToTop}><span>01.</span>Home</Link>
-          <Link to="#about"><span>02.</span>About</Link>
-          <Link to="#projects"><span>03.</span>Projects</Link>
-          <Link to="#contact"><span>04.</span>Contact</Link>
+          <Link to="#about" onClick={() => setIsOpen(false)}><span>02.</span>About</Link>
+          <Link to="#projects" onClick={() => setIsOpen(false)}><span>03.</span>Projects</Link>
+          <Link to="#contact" onClick={() => setIsOpen(false)}><span>04.</span>Contact</Link>
           <BoxCvButtons>
             <ResumeButton href={PtResume} target="_blank">Curriculo</ResumeButton>
             <ResumeButton href={EngResume} target="_blank">Resume</ResumeButton>
