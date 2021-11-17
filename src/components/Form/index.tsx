@@ -15,7 +15,7 @@ export default function Form() {
           <Input type="email" name="email" id="email" placeholder="Email" />
 
           <Select name="message" id="message" placeholder="Select your Message">
-            <option value="" disabled selected>Whats kind message?</option>
+            <option value="op0" disabled defaultValue={"Whats kind message?"}>Whats kind message?</option>
             <option value="op1">FullStack</option>
             <option value="op2">FrontEnd</option>
             <option value="op3">BackEnd</option>

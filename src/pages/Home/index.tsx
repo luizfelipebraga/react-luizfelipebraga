@@ -5,21 +5,10 @@ import {
 } from './styles';
 
 import RuivoProgramando from '../../svgs/hello-ruivo.svg';
-import { useEffect } from 'react';
 
-//library
-import "aos/dist/aos.css";
-import Aos from 'aos';
 import { ProjectButtonComponent } from '../../components/Buttons/Project';
 
 export function HomePage() {
-
-  useEffect(() => {
-    Aos.init({
-      duration: 2000,
-      once: true
-    });
-  }, [])
 
   return (
     <HomeSection id="home">

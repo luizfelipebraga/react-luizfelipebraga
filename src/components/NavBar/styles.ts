@@ -22,6 +22,7 @@ export const Nav = styled.nav<INavProps>`
 
   img {
     height: 4rem;
+    width: 4rem;
     cursor: pointer;
 
     transition: all 0.5s ease-in-out;

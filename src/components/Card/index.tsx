@@ -15,19 +15,17 @@ interface ICardProps {
 
 export function Card({ title, content, url, children }: ICardProps) {
     return (
-        <div>
-            <a href={url} target="_blank" rel="noreferrer">
-                <ContainerCard>
-                    <BoxProject>
-                        <Title>{title}</Title>
-                        <Content>{content}</Content>
-                    </BoxProject>
+        <a href={url} target="_blank" rel="noreferrer">
+            <ContainerCard>
+                <BoxProject>
+                    <Title>{title}</Title>
+                    <Content>{content}</Content>
+                </BoxProject>
 
-                    <Url>
-                        {children}
-                    </Url>
-                </ContainerCard>
-            </a>
-        </div>
+                <Url>
+                    {children}
+                </Url>
+            </ContainerCard>
+        </a>
     );
 }
