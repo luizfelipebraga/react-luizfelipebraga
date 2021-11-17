@@ -7,11 +7,31 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
 
+    :root {
+        --colorBg: #252525;
+        --colorOutline: #ffffff;
+        --colorOutlineFade: #4e5559;
+
+        --widthMouse: 45px;
+        --heightMouse: 75px;
+        --borderMouse: 6px;
+
+        --posMouse: 8px;
+        --posText: 2px;
+
+        --sizeTrackball: 5px;
+        --posTrackball: 20px;
+        --shrinkTrackball: 0.4;
+
+        --animDuration: 5s;
+
+        --bgGradient: var(--colorOutlineFade) linear-gradient(transparent 0%,transparent 50%,var(--colorOutline) 50%,var(--colorOutline) 100%);
+    }
+    
     html, body, #root {
         height: 100%;
         width : 100%;
         scroll-behavior: smooth;
-        
     }
 
     h1, h2, h3, h4, h5, span, button, p  {
@@ -19,8 +39,17 @@ export default createGlobalStyle`
         color: #949494;
     }
 
+    p {
+        line-height: 25px;
+    }
+
     b, strong {
         color: #ffb464;
+    }
+
+    select, input, input:focus, textarea:focus, select:focus{
+        border: 0;
+        outline: none;
     }
 
     a {

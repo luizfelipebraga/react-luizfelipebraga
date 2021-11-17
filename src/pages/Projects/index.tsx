@@ -10,13 +10,12 @@ import {
 export function ProjectsPage() {
   return (
     <Container data-simplebar id="projects">
-      <SubTitle number={'03'} title={'Projects'}/>
+      <SubTitle number={'03'} title={'Projects'} />
 
       <GridProjects>
         <Card
           title="Nlw - Let me Ask"
-          content="Projeto de Perguntas e Respostas similar ao Brainly, 
-          com intuito de aprender um pouco mais sobre ContextAPI e StyledComponents."
+          content="Question and Answer Project similar to Brainly, in order to learn a little more about Context API and Styled Components."
           url="https://github.com/luizfelipebraga/react-letmeask-nlw"
         >
           <span>ReactJs</span>
@@ -26,8 +25,7 @@ export function ProjectsPage() {
 
         <Card
           title="Uber Clone"
-          content="Projeto de introdução ao React Native com GoogleMapApi. O usuário escolhe um local que deseja ir
-          mostrando o local de origem depois o veiculo de sua escolha."
+          content="GoogleMapApi. The user chooses a location that they want to go showing the place of origin after the vehicle of their choice."
           url="https://github.com/luizfelipebraga/react-letmeask-nlw">
           <span>React Native</span>
           <span>Redux</span>
@@ -37,9 +35,9 @@ export function ProjectsPage() {
 
         <Card
           title="Senai Vagas"
-          content="Projeto de conclusão de curso no Senai. 
-          Sistema para melhorar o precesso de ligação entre empresa e aluno, em que apenas alunos Senai poderiam
-          acessar a plataforma. FrontEnd - BackEnd - Mobile"
+          content="Project completion of course in Senai. 
+          System to improve the connection between company and student, which only Senai students could access the plataform. 
+          FrontEnd - BackEnd - Mobile"
           url="https://github.com/luizfelipebraga/react-letmeask-nlw">
           <span>ReactJs</span>
           <span>TypeScript</span>
@@ -49,7 +47,7 @@ export function ProjectsPage() {
 
         <Card
           title="Busi"
-          content="Api simples para entender um pouco mais sobre o mundo da programação funcional com Elixir"
+          content="Simple API to understand a little more about the world of functional programming with Elixir"
           url="https://github.com/luizfelipebraga/elixir-busi-api">
           <span>Elixir</span>
           <span>Docker</span>
@@ -57,7 +55,7 @@ export function ProjectsPage() {
 
         <Card
           title="Portfolio Vanilla"
-          content="Portfolio usando apenas Html, Css e JavaScript vanilla. Sem uso de Frameworks."
+          content="Portfolio using only Html, Css and Vanilla JavaScript. No use of Frameworks."
           url="https://github.com/luizfelipebraga/luizfelipebraga.github.io"
         >
           <a href="https://github.com/luizfelipebraga/luizfelipebraga.github.io" target="_blank" rel="noreferrer">
@@ -70,7 +68,7 @@ export function ProjectsPage() {
 
         <Card
           title="Html and Css Tips"
-          content="Repositório em que guardo alguns templates de códigos para usar em futuros projetos."
+          content="Repository where I save some code templates to use in future projects."
           url="https://github.com/luizfelipebraga/react-letmeask-nlw">
           <span>Html</span>
           <span>Css</span>

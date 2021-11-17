@@ -37,11 +37,12 @@ export const AsideTitle = styled.aside`
     display: flex;
     font-size: .8rem;
     color: #fff;
+    white-space: nowrap;
 
     &:first-child {
       color: #ffb464;
       font-weight: 600;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       width: 100%;
       max-width: 540px;
       text-align: left;
@@ -56,13 +57,13 @@ export const AsideTitle = styled.aside`
     }
 
     &:nth-child(2), &:nth-child(3) {
-      font-size: clamp(40px, 8vw, 80px);
+      font-size: clamp(35px, 8vw, 65px);
       text-transform: capitalize;
       font-weight: bold;
     }
 
     &:nth-child(3) {
-      font-size: clamp(40px, 8vw, 60px);
+      font-size: clamp(20px, 8vw, 45px);
       color: #b09c88;
     }
   }
