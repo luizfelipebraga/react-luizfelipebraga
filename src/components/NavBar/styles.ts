@@ -23,7 +23,7 @@ export const Nav = styled.nav<INavProps>`
 
   font-size:${(props) => (props.navScroll && !props.isOpen) ? '.8rem' : '1rem'};
 
-  padding: ${({navScroll, isOpen}) => (navScroll || isOpen)? '.3rem 2rem' : '1rem 2rem' };
+  padding: ${({navScroll}) => navScroll ? '.3rem 2rem' : '1rem 2rem' };
 
   img {
     display: ${(props) => (props.isOpen ? "none": "flex")};
@@ -48,7 +48,7 @@ export const Nav = styled.nav<INavProps>`
       display: flex;
       gap: .5rem;
       color: #f2f2f2;
-      font-size:${(props) => (props.navScroll && !props.isOpen) ? '.9rem' : '1.5rem'};
+      font-size:${(props) => (!props.isOpen) ? '.9rem' : '1.5rem'};
 
       transition: all 0.2s ease-in-out;
 
@@ -63,14 +63,19 @@ export const Nav = styled.nav<INavProps>`
   }
 
   @media(max-width: 1280px) {
+    padding: 0;
+
+
     ul {
       display: ${(props) => (props.isOpen ? "flex": "none")};
       height: 100%;
       margin: 0 auto;
       justify-content: space-between;
       flex-direction: column;
-      height: ${(props) => (props.isOpen ? "50vh" : "0")};
+      height: ${(props) => (props.isOpen ? "60vh" : "0")};
       width: ${(props) => (props.isOpen ? "100vw" : "0")};
+
+      padding: 2rem 0;
       
       transition: max-height 0.3s ease-in;
     }
@@ -111,6 +116,10 @@ export const BoxCvButtons = styled.div`
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   position: relative;
+
+  @media (max-width: 1280px) {
+    display: none;
+  }
 `;
 
 export const ResumeButton = styled.a`
