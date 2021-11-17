@@ -9,7 +9,6 @@ export const Container = styled.div`
   .simplebar-scrollbar::before {
     background-color: red;
   }
-
 `;
 
 export const Content = styled.div`
@@ -22,7 +21,7 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
 
-  padding: 150px 0;
+  padding: 100px 0;
   margin: 0px auto;
   max-width: 1300px;
 

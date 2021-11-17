@@ -26,13 +26,17 @@ export const Box = styled.div`
 export const NameBox = styled.div`
   display: flex;
   gap: 16px;
+
+  input {
+    width: 50%;
+  }
 `;
 
 export const Input = styled.input`
   margin-right: 0px !important;
   color: #fff;
   font-size: 1rem;
-  background: #18181a;
+  background: rgba(51, 51, 51, 1);
   box-shadow: 0 10px 30px -15px #0f0f10e8;
   padding: 1.5rem;
   border-radius: 1rem;
@@ -42,7 +46,7 @@ export const Select = styled.select`
   background: transparent;
   color: #fff;
   font-size: 1rem;
-  background: #18181a;
+  background: rgba(51, 51, 51, 1);
   box-shadow: 0 10px 30px -15px #0f0f10e8;
   padding: 1rem;
   border-radius: 1rem;

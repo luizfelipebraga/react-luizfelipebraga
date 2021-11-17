@@ -9,12 +9,12 @@ export default function Form() {
 
         <form action="submit" method="POST">
           <NameBox>
-            <Input type="text" name="first" id="first" placeholder="First Name" style={{ width: '50%' }} />
-            <Input type="text" name="last" id="last" placeholder="Last Name" style={{ width: '50%' }} />
+            <Input required type="text" name="first" id="first" placeholder="First Name" />
+            <Input required type="text" name="last" id="last" placeholder="Last Name"/>
           </NameBox>
-          <Input type="email" name="email" id="email" placeholder="Email" />
+          <Input required type="email"  pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" name="email" id="email" placeholder="Email" />
 
-          <Select name="message" id="message" placeholder="Select your Message">
+          <Select  required name="message" id="message" placeholder="Select your Message">
             <option value="op0" disabled defaultValue={"Whats kind message?"}>Whats kind message?</option>
             <option value="op1">FullStack</option>
             <option value="op2">FrontEnd</option>

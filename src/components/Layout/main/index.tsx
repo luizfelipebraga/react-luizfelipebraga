@@ -1,5 +1,6 @@
 import SimpleBar from "simplebar-react";
 import 'simplebar/dist/simplebar.min.css';
+import { Footer } from "../../Footer";
 
 import { AuthorNameComponent } from "../../Name";
 import { NavBar } from "../../NavBar"
@@ -19,6 +20,8 @@ export const Main: React.FC = ({ children }) => {
           {children}
         </Content>
       </SimpleBar>
+
+      <Footer />
 
     </Container>
   )

@@ -1,17 +1,13 @@
-import { BrowserRouter, Switch, Route, Router } from 'react-router-dom';
-import { createMemoryHistory } from 'history';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Main } from './components/Layout/main';
 import { MainPage } from './pages/Main';
 
 export function Routes() {
-  const history = createMemoryHistory()
   return (
     <BrowserRouter>
       <Main>
         <Switch>
-          <Router history={history}>
-            <Route path="/" exact component={MainPage} />
-          </Router>
+          <Route path="/" exact component={MainPage} />
         </Switch>
       </Main>
     </BrowserRouter>

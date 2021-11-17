@@ -56,11 +56,8 @@ export function ProjectsPage() {
         <Card
           title="Portfolio Vanilla"
           content="Portfolio using only Html, Css and Vanilla JavaScript. No use of Frameworks."
-          url="https://github.com/luizfelipebraga/luizfelipebraga.github.io"
+          url="https://luizfelipebraga.github.io/"
         >
-          <a href="https://github.com/luizfelipebraga/luizfelipebraga.github.io" target="_blank" rel="noreferrer">
-            <span>WebSite</span>
-          </a>
           <span>Html</span>
           <span>Css</span>
           <span>JavaScript</span>
