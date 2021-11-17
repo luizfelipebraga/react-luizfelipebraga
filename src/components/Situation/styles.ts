@@ -14,5 +14,6 @@ export const Container = styled.div`
   p {
     margin: 20px 0 0 0;
     max-width: 300px;
+    line-height: 25px;
   }
 `;

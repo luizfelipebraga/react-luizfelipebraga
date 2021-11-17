@@ -39,10 +39,6 @@ export default createGlobalStyle`
         color: #949494;
     }
 
-    p {
-        line-height: 25px;
-    }
-
     b, strong {
         color: #ffb464;
     }

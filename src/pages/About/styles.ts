@@ -36,7 +36,7 @@ export const BoxIntroduce = styled.div`
   max-width: 550px;
 
   /* font-size: 1rem; */
-  font-size: clamp(13px, 5vw, 16px);
+  font-size: clamp(13px, 4vw, 16px);
   line-height: 30px;
 
   padding: 1rem;
