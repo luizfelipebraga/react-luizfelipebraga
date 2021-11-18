@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <link rel="icon" href="./orangeCircle.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#121111"/>
+  <meta name="theme-color" content="#121111" />
 
   <link rel="apple-touch-icon" href="icons/felipe/apple-icon-180.png">
   <link rel="apple-touch-icon" href="icons/hello/apple-icon-180.png">
@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <!-- -------------- -->
-  
+
   <meta name="description" content="Luiz Felipe Braga's portfolio" />
   <title>Luiz Felipe Braga</title>
 </head>
@@ -29,13 +29,17 @@
   <div id="root"></div>
 
   <script>
-    if('serviceWorker' in navigator) {
+    if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('./serviceworker')
-        .then((reg) => console.log('Success: ', reg.scope))
-        .catch((err) => console.log('Error: ', err))
+          .then((reg) => console.log('Success: ', reg.scope))
+          .catch((err) => console.log('Error: ', err))
       })
     }
+  </script>
+
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
   </script>
 </body>
 

@@ -61,6 +61,16 @@ export const Select = styled.select`
   }
 `;
 
+export const TextArea = styled.textarea`
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  background: rgba(51, 51, 51, 1);
+  box-shadow: 0 10px 30px -15px #0f0f10e8;
+  padding: 1rem;
+  border-radius: 1rem;
+`;
+
 export const Button = styled.input`
   background-color: transparent;
   font-size: 1rem;
@@ -69,4 +79,11 @@ export const Button = styled.input`
   color: #fff;
   border: 2px solid #f55f19;
   cursor: pointer;
+
+  transition: background 0.3s ease-in-out;
+
+  &:focus {
+    outline:none;
+    border: 2px solid #f55f19;
+}
 `;

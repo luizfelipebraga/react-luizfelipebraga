@@ -9,7 +9,7 @@ import {
 
 export function ProjectsPage() {
   return (
-    <Container data-simplebar id="projects">
+    <Container id="projects">
       <SubTitle number={'03'} title={'Projects'} />
 
       <GridProjects>

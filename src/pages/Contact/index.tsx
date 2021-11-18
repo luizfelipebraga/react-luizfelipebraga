@@ -1,4 +1,4 @@
-import Form from "../../components/Form";
+import { Form } from "../../components/Form";
 import { NeedDev } from "../../components/NeedDev";
 import { SubTitle } from "../../components/SubTitle";
 import { ContactSection } from "./styles";

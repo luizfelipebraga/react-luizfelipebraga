@@ -1,14 +1,22 @@
 import styled from 'styled-components';
+import SimpleBar from "simplebar-react";
+import 'simplebar/dist/simplebar.min.css';
+
+export const SimpleBarStyled = styled(SimpleBar) `
+  max-height: 100vh;
+  overflow: hidden;
+
+  .simplebar-scrollbar:before {
+    background: #fff;
+  }
+`
 
 export const Container = styled.div`
   width: 100%;
   min-height: 100vh;
+  overflow: hidden;
 
   background-image: linear-gradient(91.18deg, #0d0d0e 32.63%, #141416 62.22%);
-
-  .simplebar-scrollbar::before {
-    background-color: red;
-  }
 `;
 
 export const Content = styled.div`
