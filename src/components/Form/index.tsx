@@ -7,8 +7,15 @@ export default function Form() {
   const [lastName, setLastName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
   const [select, setSelect] = useState<string>('message');
+  console.log(select);
 
   const options = [
+    {
+      disabled: true,
+      defaultValue: 'message',
+      label: 'What type of message?',
+      value: 'message',
+    },
     {
       label: 'FullStack Job',
       value: 'fullstack',
@@ -56,9 +63,8 @@ export default function Form() {
             value={select}
             onChange={event => setSelect(event.target.value)}>
 
-            <option value="message" disabled defaultValue="message">What type of message?</option>
-            {options.map((op) => (
-                <option value={op.value}>{op.label}</option>
+            {options.map((op, index) => (
+                <option key={index} value={op.value} disabled={op.disabled} defaultValue={op.defaultValue}>{op.label}</option>
               )
             )}
           </Select>
