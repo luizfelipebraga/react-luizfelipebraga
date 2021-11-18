@@ -43,7 +43,7 @@ export default createGlobalStyle`
         color: #ffb464;
     }
 
-    select, input, input:focus, textarea:focus, select:focus{
+    textarea, select, input, input:focus, textarea:focus, select:focus{
         border: 0;
         outline: none;
     }
