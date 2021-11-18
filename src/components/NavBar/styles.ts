@@ -13,7 +13,6 @@ export const Nav = styled.nav<INavProps>`
 
   overflow: hidden;
 
-  position: ${(props) => (props.isOpen && 'fixed')};
   transition: all 0.5s ease-in-out;
 
   background: ${(props) => (props.navScroll || props.isOpen) ? '#121111' : 'transparent'};
