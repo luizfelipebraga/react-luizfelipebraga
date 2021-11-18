@@ -65,7 +65,6 @@ export const Nav = styled.nav<INavProps>`
   @media(max-width: 1280px) {
     padding: 0;
 
-
     ul {
       display: ${(props) => (props.isOpen ? "flex": "none")};
       height: 100%;
