@@ -11,14 +11,13 @@ export const Nav = styled.nav<INavProps>`
   justify-content: space-between;
   width: 100%;
 
-  overflow: hidden;
-
   transition: all 0.5s ease-in-out;
 
   background: ${(props) => (props.navScroll || props.isOpen) ? '#121111' : 'transparent'};
+  /* background: #121111; */
 
   position: fixed;
-  z-index: 1;
+  z-index: 5555;
 
   font-size:${(props) => (props.navScroll && !props.isOpen) ? '.8rem' : '1rem'};
 
