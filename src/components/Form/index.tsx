@@ -1,4 +1,4 @@
-import { useState, useRef, FormEvent } from 'react';
+import { useState } from 'react';
 import { MySituation } from '../Situation';
 import { Container, NameBox, Input, Button, Select, Box, TextArea } from './styles';
 import emailjs from 'emailjs-com';
@@ -9,23 +9,18 @@ export function Form(){
   const [email, setEmail] = useState<string>('');
   const [select, setSelect] = useState<string>('type');
   const [message, setMessage] = useState<string>('');
-  console.log(message)
 
-  // const form = useRef<HTMLInputElement | null>();
+  const sendEmail = (event: any) => {
+    event.preventDefault();
 
-  // const valueRef = form.current ? form.current : '';
-
-  // const sendEmail = (event: FormEvent) => {
-  //   event.preventDefault();
-
-
-  //   emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', event.target, 'YOUR_USER_ID')
-  //     .then((result) => {
-  //       console.log(result.text);
-  //     }, (error) => {
-  //       console.log(error.text);
-  //     });
-  // };
+    emailjs.sendForm('service_beg4kfb', 'gmail', event.target, 'user_WRCVefRiFlT2Ki4K4A3tR')
+      .then((result) => {
+        console.log(result.text);
+        console.log(result)
+      }, (error) => {
+        console.error(error.text);
+      });
+  };
 
   const options = [
     {
@@ -35,23 +30,23 @@ export function Form(){
       value: 'type',
     },
     {
-      label: 'FullStack Job',
-      value: 'fullstack',
+      label: 'Full Stack Job',
+      value: 'FULL STACK JOB',
     },
 
     {
-      label: 'BackEnd Job',
-      value: 'backend',
+      label: 'Back-end Job',
+      value: 'BACKEND JOB',
     },
 
     {
-      label: 'FrontEnd Job',
-      value: 'frontend',
+      label: 'Front-end Job',
+      value: 'FRONTEND JOB',
     },
 
     {
       label: 'Other',
-      value: 'other',
+      value: 'OTHERS',
     }
   ]
 
@@ -60,13 +55,12 @@ export function Form(){
       <Box>
         <MySituation />
 
-        <form>
+        <form onSubmit={sendEmail}>
           <NameBox>
             <Input required type="text" name="first" id="first" placeholder="First Name" value={firstName} onChange={event => setFirstName(event.target.value)} />
             <Input required type="text" name="last" id="last" placeholder="Last Name" value={lastName} onChange={event => setLastName(event.target.value)} />
           </NameBox>
           <Input required type="email"
-            pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
             name="email"
             id="email"
             placeholder="Email"
@@ -87,7 +81,7 @@ export function Form(){
             )}
           </Select>
 
-          <TextArea id="message" value={message} onChange={event => setMessage(event.target.value)} placeholder="Message" rows={3} cols={50}/>
+          <TextArea name="message" id="message" value={message} onChange={event => setMessage(event.target.value)} placeholder="Message" rows={3} cols={50}/>
 
           <Button type="submit" value="Send" />
         </form>
