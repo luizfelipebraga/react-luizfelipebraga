@@ -79,4 +79,11 @@ export const Button = styled.input`
   color: #fff;
   border: 2px solid #f55f19;
   cursor: pointer;
+
+  transition: background 0.3s ease-in-out;
+
+  &:focus {
+    outline:none;
+    border: 2px solid #f55f19;
+}
 `;

@@ -14,7 +14,6 @@ export const NavBar = () => {
 
   function changeBackground() {
     if (window.scrollY > 10) {
-      console.log('aaa')
       setNavBar(true);
     }
     else {

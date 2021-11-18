@@ -2,8 +2,9 @@ import { useState } from 'react';
 import { MySituation } from '../Situation';
 import { Container, NameBox, Input, Button, Select, Box, TextArea } from './styles';
 import emailjs from 'emailjs-com';
+import { Toaster, toast } from 'react-hot-toast';
 
-export function Form(){
+export function Form() {
   const [firstName, setFirstName] = useState<string>('');
   const [lastName, setLastName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
@@ -15,8 +16,8 @@ export function Form(){
 
     emailjs.sendForm('service_beg4kfb', 'gmail', event.target, 'user_WRCVefRiFlT2Ki4K4A3tR')
       .then((result) => {
+        toast.success('Email has Sent, TY.');
         console.log(result.text);
-        console.log(result)
       }, (error) => {
         console.error(error.text);
       });
@@ -52,6 +53,10 @@ export function Form(){
 
   return (
     <Container id="formEmail">
+      <Toaster
+        position="top-center"
+        reverseOrder={true}
+      />
       <Box>
         <MySituation />
 
@@ -81,7 +86,7 @@ export function Form(){
             )}
           </Select>
 
-          <TextArea name="message" id="message" value={message} onChange={event => setMessage(event.target.value)} placeholder="Message" rows={3} cols={50}/>
+          <TextArea name="message" id="message" value={message} onChange={event => setMessage(event.target.value)} placeholder="Message" rows={3} cols={50} />
 
           <Button type="submit" value="Send" />
         </form>
