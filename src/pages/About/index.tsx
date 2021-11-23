@@ -5,7 +5,7 @@ import {
   BoxIntroduce
 } from './styles';
 
-import FelipeImg from '../../images/myselfpicture.webp';
+import FelipeImg from '../../images/felipepicture.jpg';
 import { SubTitle } from '../../components/SubTitle';
 
 export function AboutPage() {
