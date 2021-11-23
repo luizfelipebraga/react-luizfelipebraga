@@ -45,7 +45,6 @@ export const NavBar = () => {
           <span />
           <span />
           <span />
-
         </Hamburger>
 
         <ul>
