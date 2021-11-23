@@ -2,7 +2,9 @@ import { useState } from 'react';
 import { MySituation } from '../Situation';
 import { Container, NameBox, Input, Button, Select, Box, TextArea } from './styles';
 import emailjs from 'emailjs-com';
-import { Toaster, toast } from 'react-hot-toast';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export function Form() {
   const [firstName, setFirstName] = useState<string>('');
@@ -15,10 +17,15 @@ export function Form() {
     event.preventDefault();
 
     emailjs.sendForm('service_beg4kfb', 'gmail', event.target, 'user_WRCVefRiFlT2Ki4K4A3tR')
-      .then((result) => {
-        toast.success('Email has Sent, TY.');
-        console.log(result.text);
+      .then(() => {
+        const functionThatReturnPromise = () => new Promise(resolve => setTimeout(resolve, 2000));
+        toast.promise(functionThatReturnPromise, {
+          pending: 'Loading',
+          success: 'Email has sent, thank you!',
+          error: 'Something happened, try again.'
+        })
       }, (error) => {
+        toast.error("Something happened, try again.");
         console.error(error.text);
       });
   };
@@ -53,10 +60,17 @@ export function Form() {
 
   return (
     <Container id="formEmail">
-      <Toaster
-        position="top-center"
-        reverseOrder={true}
-      />
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover />
+
       <Box>
         <MySituation />
 

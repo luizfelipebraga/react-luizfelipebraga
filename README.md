@@ -18,7 +18,7 @@ Local:  http://localhost:3000
 ## Packages:
 [x] Manager Package Yarn
 
-[x] react-host-toast
+[x] react-toastify
 
 [x] styled-components
 
