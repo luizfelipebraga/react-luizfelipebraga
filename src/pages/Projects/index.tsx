@@ -26,7 +26,7 @@ export function ProjectsPage() {
         <Card
           title="Uber Clone"
           content="GoogleMapApi. The user chooses a location that they want to go showing the place of origin after the vehicle of their choice."
-          url="https://github.com/luizfelipebraga/react-letmeask-nlw">
+          url="https://github.com/luizfelipebraga/react-native-uber">
           <span>React Native</span>
           <span>Redux</span>
           <span>Tailwind</span>
@@ -38,7 +38,7 @@ export function ProjectsPage() {
           content="Project completion of course in Senai. 
           System to improve the connection between company and student, which only Senai students could access the plataform. 
           FrontEnd - BackEnd - Mobile"
-          url="https://github.com/luizfelipebraga/react-letmeask-nlw">
+          url="https://github.com/luizfelipebraga/csharp-senai-vagas">
           <span>ReactJs</span>
           <span>TypeScript</span>
           <span>C#</span>
@@ -66,9 +66,10 @@ export function ProjectsPage() {
         <Card
           title="Html and Css Tips"
           content="Repository where I save some code templates to use in future projects."
-          url="https://github.com/luizfelipebraga/react-letmeask-nlw">
+          url="https://github.com/luizfelipebraga/html_css-tips">
           <span>Html</span>
           <span>Css</span>
+          <span>Js</span>
         </Card>
       </GridProjects>
 
