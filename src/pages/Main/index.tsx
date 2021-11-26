@@ -2,7 +2,6 @@ import {
     MainSection
 } from './styles';
 
-//library
 import { AboutPage } from '../About';
 import { ProjectsPage } from '../Projects';
 import { ContactPage } from '../Contact';
@@ -12,7 +11,7 @@ export function MainPage() {
 
     if (typeof window !== 'undefined') {
         // eslint-disable-next-line global-require
-        require('smooth-scroll')('a[href*="#"]');
+        require('smooth-scroll')('a[href*="/"]');
     }
 
     return (
