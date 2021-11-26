@@ -9,12 +9,11 @@ import {
 export function LoadingPage() {
 
   const history = useHistory()
-
   useEffect(() => {
     setTimeout(() => {
       history.push('/home')
     }, 3000)
-  }, [])
+  }, [history])
 
   return (
     <Container>
