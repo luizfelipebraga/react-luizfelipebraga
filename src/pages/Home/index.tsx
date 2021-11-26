@@ -7,26 +7,10 @@ import {
 import RuivoProgramando from '../../svgs/hello-animated.svg';
 
 import { ProjectButtonComponent } from '../../components/Buttons/Project';
-import { useEffect, useRef } from 'react';
-import Lottie from 'lottie-web';
-
 export function HomePage() {
-  const container = useRef(null)
-
-  // useEffect(() => {
-  //   Lottie.loadAnimation({
-  //     container: container.current,
-  //     renderer: 'svg',
-  //     loop: true,
-  //     autoplay: true,
-  //     animationData: ''
-      
-  //   })
-  // },[])
-
   return (
     <HomeSection id="home">
-      <Container ref={container}>
+      <Container>
         <img src={RuivoProgramando} alt="Imagem de uma pessoa programando" />
 
         <AsideTitle>
