@@ -1,4 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
+import SimpleBar from 'simplebar-react';
+import 'simplebar/dist/simplebar.min.css';
 
 export default createGlobalStyle`
     * {
@@ -102,4 +104,9 @@ export default createGlobalStyle`
             font-size: 75%;
         }
     }
+`;
+
+export const ScrollStyled = styled(SimpleBar)`
+    max-height: 99.9999999vh;
+    overflow-x: hidden;
 `;
