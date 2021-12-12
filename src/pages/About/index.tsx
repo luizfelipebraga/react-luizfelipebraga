@@ -14,7 +14,7 @@ export function AboutPage() {
       <SubTitle number={'02'} title={'About Me'}/>
 
       <Container>
-        <MyselfImg src={FelipeImg} alt="Felipe image" />
+        <MyselfImg src={FelipeImg} alt="Felipe image" loading="lazy" />
         <BoxIntroduce>
           <p>Hi! My name Luiz, 18 years. - <strong>JavaScript Full Stack Developer</strong>
           <br/> I am a person who always looking for constant technical and personal evolution.

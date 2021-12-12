@@ -2,8 +2,8 @@ import { HashLink as Link } from "react-router-hash-link";
 import { Nav, ResumeButton, BoxCvButtons, Hamburger, Menu } from "./styles"
 import LogoImg from '../../images/orangeCircle.png';
 
-import PtResume from '../../documents/resume.pdf';
-import EngResume from '../../documents/curriculum.pdf';
+import PtResume from '../../documents/curriculo.pdf';
+import EngResume from '../../documents/resume.pdf';
 
 import { useEffect, useState } from "react";
 
@@ -35,7 +35,7 @@ export const NavBar = () => {
 
   return (
     <Nav isOpen={isOpen} navScroll={navBar}>
-      <Link to="/" onClick={ScrollToTop}>
+      <Link to="/home" onClick={ScrollToTop}>
         <img src={LogoImg} alt="Logo" />
       </Link>
 

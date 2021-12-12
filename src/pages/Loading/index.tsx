@@ -14,7 +14,7 @@ export function LoadingPage() {
     setTimeout(() => {
       history.push('/home')
     }, 3000)
-  }, [])
+  }, [history])
 
   return (
     <Container>

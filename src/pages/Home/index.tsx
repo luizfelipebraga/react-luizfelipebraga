@@ -7,8 +7,8 @@ import {
 import RuivoProgramando from '../../svgs/hello-animated.svg';
 
 import { ProjectButtonComponent } from '../../components/Buttons/Project';
-import { useEffect, useRef } from 'react';
-import Lottie from 'lottie-web';
+import { useRef } from 'react';
+// import Lottie from 'lottie-web';
 
 export function HomePage() {
   const container = useRef(null)
