@@ -7,6 +7,10 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
 
+    html.sr .load-hidden {
+        visibility: hidden;
+    }
+
     :root {
         --colorBg: #252525;
         --colorOutline: #ffffff;
