@@ -9,7 +9,6 @@ import {
 export function LoadingPage() {
 
   const history = useHistory()
-
   useEffect(() => {
     setTimeout(() => {
       history.push('/home')
