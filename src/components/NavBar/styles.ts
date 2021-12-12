@@ -21,7 +21,7 @@ export const Nav = styled.nav<INavProps>`
 
   font-size:${(props) => (props.navScroll && !props.isOpen) ? '.8rem' : '1rem'};
 
-  padding: ${({navScroll}) => navScroll ? '.3rem 2rem' : '1rem 2rem' };
+  padding: .3rem 2rem;
 
   img {
     display: ${(props) => (props.isOpen ? "none": "flex")};
