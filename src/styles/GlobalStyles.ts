@@ -13,6 +13,10 @@ export default createGlobalStyle`
         visibility: hidden;
     }
 
+    [data-simplebar]:not(.simplebar-dragging) .simplebar-content-wrapper {
+	    scroll-behavior: smooth;
+    }
+
     :root {
         --colorBg: #252525;
         --colorOutline: #ffffff;
@@ -109,4 +113,5 @@ export default createGlobalStyle`
 export const ScrollStyled = styled(SimpleBar)`
     max-height: 99.9999999vh;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 `;

@@ -8,7 +8,7 @@ import EngResume from '../../documents/resume.pdf';
 import { useEffect, useState } from "react";
 
 export const NavBar = () => {
-
+  
   const [navBar, setNavBar] = useState<boolean>(false);
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -48,7 +48,7 @@ export const NavBar = () => {
         </Hamburger>
 
         <ul>
-          <Link to="/home" onClick={ScrollToTop}><span>01.</span>Home</Link>
+          <Link to="#home" onClick={ScrollToTop}><span>01.</span>Home</Link>
           <Link to="#about" onClick={() => setIsOpen(false)}><span>02.</span>About</Link>
           <Link to="#projects" onClick={() => setIsOpen(false)}><span>03.</span>Projects</Link>
           <Link to="#contact" onClick={() => setIsOpen(false)}><span>04.</span>Contact</Link>
