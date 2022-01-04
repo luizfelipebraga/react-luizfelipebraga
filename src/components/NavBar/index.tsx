@@ -53,7 +53,7 @@ export const NavBar = () => {
         )}
 
         <ul>
-          <Link to="/home" onClick={ScrollToTop}>
+          <Link to="#home" onClick={ScrollToTop}>
             <span>01.</span>Home
           </Link>
           <Link to="#about" onClick={() => setIsOpen(false)}>
