@@ -15,6 +15,10 @@ import EngResume from "../../documents/resume.pdf";
 import { useEffect, useState } from "react";
 
 export const NavBar = () => {
+<<<<<<< HEAD
+=======
+  
+>>>>>>> cb435b06f25d20ca077f0b968a20bff80d316dbe
   const [navBar, setNavBar] = useState<boolean>(false);
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -64,6 +68,7 @@ export const NavBar = () => {
           <Link to="#contact" onClick={() => setIsOpen(false)}>
             <span>04.</span>Contact
           </Link>
+
           <BoxCvButtons>
             <ResumeButton href={PtResume} target="_blank">
               Curriculo
