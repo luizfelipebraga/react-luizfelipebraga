@@ -1,4 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
 
 interface INavProps {
   navScroll: boolean;
@@ -7,31 +9,30 @@ interface INavProps {
 
 export const Nav = styled.nav<INavProps>`
   display: flex;
-  align-items: ${(props) => (props.isOpen ? "none": "center")};
+  align-items: ${(props) => (props.isOpen ? "none" : "center")};
   justify-content: space-between;
   width: 100%;
 
   transition: all 0.5s ease-in-out;
 
   background: #121111;
-  /* background: #121111; */
 
   position: fixed;
   z-index: 5555;
 
-  font-size:${(props) => (props.navScroll && !props.isOpen) ? '.8rem' : '1rem'};
+  font-size: ${(props) => props.navScroll && !props.isOpen ? ".8rem" : "1rem"};
 
-  padding: .3rem 2rem;
+  padding: 0.3rem 2rem;
 
   img {
-    display: ${(props) => (props.isOpen ? "none": "flex")};
+    display: ${(props) => (props.isOpen ? "none" : "flex")};
     height: 4rem;
     width: 4rem;
     cursor: pointer;
 
     transition: all 0.5s ease-in-out;
     &:hover {
-      transform: rotate(50deg)
+      transform: rotate(50deg);
     }
   }
 
@@ -40,13 +41,12 @@ export const Nav = styled.nav<INavProps>`
     align-items: center;
     position: relative;
     gap: 3rem;
-    transition: all 0.5s ease-in-out;
 
     a {
       display: flex;
-      gap: .5rem;
+      gap: 0.5rem;
       color: #f2f2f2;
-      font-size:${(props) => (!props.isOpen) ? '.9rem' : '1.5rem'};
+      font-size: ${(props) => (!props.isOpen ? ".9rem" : "1.5rem")};
 
       transition: all 0.2s ease-in-out;
 
@@ -60,51 +60,67 @@ export const Nav = styled.nav<INavProps>`
     }
   }
 
-  @media(max-width: 1280px) {
+  @media (max-width: 1280px) {
     padding: 0;
 
     ul {
-      display: ${(props) => (props.isOpen ? "flex": "none")};
+      display: ${(props) => (props.isOpen ? "flex" : "none")};
       height: 100%;
       margin: 0 auto;
-      justify-content: space-between;
+      justify-content: space-evenly;
       flex-direction: column;
-      height: ${(props) => (props.isOpen ? "60vh" : "0")};
+      height: ${(props) => (props.isOpen ? "100vh" : "0")};
       width: ${(props) => (props.isOpen ? "100vw" : "0")};
 
       padding: 2rem 0;
-      
-      transition: max-height 0.3s ease-in;
+
+      transition: all 0.3s ease-in;
     }
   }
 `;
 
 export const Menu = styled.div`
   display: flex;
+  align-items: flex-end;
   flex-direction: column;
+  transition: all .3s ease-in-out !important;
 
   @media (max-width: 1280px) {
     width: 100%;
     z-index: 1000;
-  } 
+  }
 `;
 
-export const Hamburger = styled.div`
+export const Hamburger = styled(GiHamburgerMenu)`
   display: none;
-  flex-direction: column;
+  fill: #ffb464;
+  height: 3rem;
   cursor: pointer;
-  span {
-    height: 2px;
-    width: 25px;
-    background: #ed9b4d;
-    margin-bottom: 4px;
-    border-radius: 5px;
-  }
+
   @media (max-width: 1280px) {
-    display: flex;
-    align-items: flex-end;
-    padding: 2rem 2rem;
-  } 
+    display: block;
+    align-items: right;
+    margin-right: 2rem;
+    size: 20px;
+  }
+`;
+
+export const CloseIcon = styled(AiOutlineClose)`
+  display: none;
+  fill: #ffb464;
+  height: 1.5rem;
+
+  @media (max-width: 1280px) {
+    display: block;
+    height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+
+    svg {
+      height: 2rem;
+    }
+  }
 `;
 
 export const BoxCvButtons = styled.div`
@@ -120,43 +136,42 @@ export const BoxCvButtons = styled.div`
 `;
 
 export const ResumeButton = styled.a`
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: .7rem !important;
-    margin-right: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.7rem !important;
+  margin-right: 1rem;
 
-    font-weight: bold;
-    color: #fff;
+  font-weight: bold;
+  color: #fff;
 
-    padding: 15px 20px;
+  padding: 15px 20px;
 
-    position: relative;
+  position: relative;
 
-    z-index: 1;
+  z-index: 1;
 
-    border: 2px solid #f55f19;
+  border: 2px solid #f55f19;
 
-    &:hover {
-        color: #fff !important;
-        &:before {
-            background: #f55f19;
-            width: 100%;
-        }
-    }
-
+  &:hover {
+    color: #fff !important;
     &:before {
-        width: 0;
-        height: 100%;
+      background: #f55f19;
+      width: 100%;
+    }
+  }
 
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
+  &:before {
+    width: 0;
+    height: 100%;
 
-        transform: translate(-50%, -50%);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
-        z-index: -1;
-        transition: 0.7s ease;
-}
+    transform: translate(-50%, -50%);
+
+    z-index: -1;
+    transition: 0.7s ease;
+  }
 `;
-
