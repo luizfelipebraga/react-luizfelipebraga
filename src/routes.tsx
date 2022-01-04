@@ -5,7 +5,6 @@ import { LoadingPage } from "./pages/Loading";
 import { MainPage } from './pages/Main';
 import { NotFoundPage } from './pages/NotFound';
 
-
 export function Routes() {
   return (
     <BrowserRouter>
