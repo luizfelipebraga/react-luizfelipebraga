@@ -14,7 +14,23 @@ export const Container = styled.div`
   gap: 5rem;
 
   >img {
-    height: 15rem;
+    max-height: 15rem;
+    transform: translateY(0px);
+    animation: float 4000ms ease-in-out infinite;
+
+    @keyframes float {
+      0% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(.9rem);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
+    }
   }
 
   @media(max-width:1400px) {
