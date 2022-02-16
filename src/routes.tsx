@@ -4,6 +4,7 @@ import { Main } from './components/Layout/main';
 import { LoadingPage } from "./pages/Loading";
 import { MainPage } from './pages/Main';
 import { NotFoundPage } from './pages/NotFound';
+import React from 'react';
 
 export function Routes() {
   return (

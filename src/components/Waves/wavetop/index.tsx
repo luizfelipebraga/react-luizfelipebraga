@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { Wave, ShapeFill } from './styles';
 
 export function WaveTop() {

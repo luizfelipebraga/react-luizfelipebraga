@@ -1,5 +1,3 @@
-
-import React from 'react';
 import { ScrollStyled } from '../../../styles/GlobalStyles';
 import { Footer } from "../../Footer";
 import { AuthorNameComponent } from "../../Name";

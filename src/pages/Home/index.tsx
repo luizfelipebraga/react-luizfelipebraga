@@ -26,6 +26,5 @@ export function HomePage() {
         </AsideTitle>
       </Container>
     </HomeSection>
-
   )
 }
