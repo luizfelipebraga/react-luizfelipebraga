@@ -1,54 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <link rel="icon" href="./orangeCircle.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#121111" />
+    <meta name="theme-color" content="#000000" />
 
-    <link rel="apple-touch-icon" href="icons/felipe/apple-icon-180.png">
-    <link rel="apple-touch-icon" href="icons/hello/apple-icon-180.png">
-    <link rel="apple-touch-icon" href="icons/logo/apple-icon-180.png">
-    <link rel="apple-touch-icon" href="icons/footer/apple-icon-180.png">
-
-    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+    <link rel="apple-touch-icon" href="./orangeCircle.png" />
+    <link rel="manifest" href="./manifest.json" />
 
     <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <!-- -------------- -->
 
     <meta name="description" content="Luiz Felipe Braga's portfolio" />
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-        ScrollReveal({
-            reset: true
-        });
+      ScrollReveal({
+        reset: true,
+      });
     </script>
 
     <title>Luiz Felipe Braga</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 
     <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./serviceworker')
-                    .then((reg) => console.log('Success: ', reg.scope))
-                    .catch((err) => console.log('Error: ', err))
-            })
-        }
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("./serviceworker")
+            .then((reg) => console.log("Success: ", reg.scope))
+            .catch((err) => console.log("Error: ", err));
+        });
+      }
     </script>
 
     <script>
-        var scroll = new SmoothScroll('a[href*="#"]');
+      var scroll = new SmoothScroll('a[href*="#"]');
     </script>
-</body>
-
+  </body>
 </html>

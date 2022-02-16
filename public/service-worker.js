@@ -1,15 +1,40 @@
-const CACHE_NAME = 'version-1';
-const urlsToCache = ['index.html', 'offline.html'];
+const CACHE_NAME = "version1";
+const urlsToCache = ["index.html", "offline.html"];
 
-const self = this;
-
-self.addEventListener('install', (event) => {
+self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then((cache) => {
-        console.log('Opened Cache')
+    caches.open(CACHE_NAME).then((cache) => {
+      return cache.addAll(urlsToCache);
+    })
+  );
+  console.log("Inside the install handler:", event);
+});
 
-        return cache.addAll(urlsToCache);
-      })
-  )
-})
+self.addEventListener("fetch", (event) => {
+  event.respondWith(
+    caches.match(event.request).then(async () => {
+      try {
+        return await fetch(event.request);
+      } catch {
+        return await caches.match("offline.html");
+      }
+    })
+  );
+});
+
+self.addEventListener("activate", (event) => {
+  const cacheWithList = [];
+  cacheWithList.push(CACHE_NAME);
+
+  event.respondWith(
+    caches.keys().then((cachesNames) =>
+      Promise.all(
+        cachesNames.map((cachesName) => {
+          if (!cacheWithList.includes(cachesName)) {
+            return caches.delete(cachesName);
+          }
+        })
+      )
+    )
+  );
+});
