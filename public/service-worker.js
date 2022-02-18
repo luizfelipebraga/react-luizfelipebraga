@@ -1,10 +1,15 @@
 const CACHE_NAME = "version1";
 const urlsToCache = ["index.html", "offline.html"];
+const self = this;
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(urlsToCache).catch((err) => console.log(err));
+    caches.open(CACHE_NAME).then(async (cache) => {
+      try {
+        return await cache.addAll(urlsToCache);
+      } catch (err) {
+        return console.log(err);
+      }
     })
   );
   console.log("Inside the install handler:", event);
@@ -12,8 +17,12 @@ self.addEventListener("install", (event) => {
 
 self.addEventListener("fetch", (event) => {
   event.respondWith(
-    caches.match(event.request).then(() => {
-      return fetch(event.request).catch(() => caches.match("offline.html"));
+    caches.match(event.request).then(async () => {
+      try {
+        return await fetch(event.request);
+      } catch {
+        return await caches.match("offline.html");
+      }
     })
   );
 });

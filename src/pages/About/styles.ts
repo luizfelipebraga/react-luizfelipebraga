@@ -12,7 +12,14 @@ export const AboutSection = styled.section`
 
 export const Container = styled.div`
   display: flex;
+  justify-content: center;
   gap: 2rem;
+  padding: 2rem;
+  /* box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-left: .4rem solid #ffb464;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 
   @media (max-width: 1024px) {
     justify-content: center;
@@ -40,9 +47,4 @@ export const BoxIntroduce = styled.div`
   line-height: 30px;
 
   padding: 1rem;
-
-  @media (max-width: 1024px) {
-    background-color: #18181a;
-    padding: 1.5rem;
-  }
 `;
