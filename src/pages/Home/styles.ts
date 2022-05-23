@@ -15,6 +15,7 @@ export const Container = styled.div`
 
   >img {
     max-height: 15rem;
+    width: auto;
     transform: translateY(0px);
     animation: float 4000ms ease-in-out infinite;
 
