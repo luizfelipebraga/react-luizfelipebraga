@@ -8,6 +8,10 @@ export const Container = styled.section`
     padding: 100px 0 50px 0;
 
     max-width: 1000px;
+
+    @media (max-width: 1024px) {
+        padding-block: 0;
+    }
 `;
 
 export const GridProjects = styled.div`

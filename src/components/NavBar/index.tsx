@@ -1,16 +1,12 @@
 import { HashLink as Link } from "react-router-hash-link";
+import LogoImg from "../../images/orangeCircle.png";
 import {
-  Nav,
-  ResumeButton,
-  BoxCvButtons,
+  CloseIcon,
   Hamburger,
   Menu,
-  CloseIcon,
+  Nav
 } from "./styles";
-import LogoImg from "../../images/orangeCircle.png";
 
-import PtResume from "../../documents/curriculo.pdf";
-import EngResume from "../../documents/resume.pdf";
 
 import { useEffect, useState } from "react";
 
@@ -66,14 +62,14 @@ export const NavBar = () => {
             <span>04.</span>Contact
           </Link>
 
-          <BoxCvButtons>
+          {/* <BoxCvButtons>
             <ResumeButton href={PtResume} target="_blank">
               Curriculo
             </ResumeButton>
             <ResumeButton href={EngResume} target="_blank">
               Resume
             </ResumeButton>
-          </BoxCvButtons>
+          </BoxCvButtons> */}
         </ul>
       </Menu>
     </Nav>
